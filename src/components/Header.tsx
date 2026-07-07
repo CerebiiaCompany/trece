@@ -1,15 +1,20 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import logoAsset from "@/assets/trece-logo.png.asset.json";
+import logoWhite from "@/assets/trece-logo-white.png";
 
-const NAV = [
+const NAV_LEFT = [
   { to: "/", label: "Inicio" },
-  { to: "/nosotros", label: "Nosotros" },
-  { to: "/servicios", label: "Servicios" },
   { to: "/proyectos", label: "Proyectos" },
+  { to: "/servicios", label: "Servicios" },
+];
+
+const NAV_RIGHT = [
+  { to: "/nosotros", label: "Nosotros" },
   { to: "/proceso", label: "Proceso" },
   { to: "/contacto", label: "Contacto" },
 ];
+
+const ALL_NAV = [...NAV_LEFT, ...NAV_RIGHT];
 
 export function Header({ transparent = false }: { transparent?: boolean }) {
   const [scrolled, setScrolled] = useState(false);
@@ -24,22 +29,24 @@ export function Header({ transparent = false }: { transparent?: boolean }) {
 
   const solid = !transparent || scrolled;
 
+  const linkCls = `link-hover text-[11px] uppercase tracking-[0.22em] transition-colors ${
+    solid ? "text-ink" : "text-ivory"
+  }`;
+
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-700 ${
         solid ? "bg-ivory/90 backdrop-blur-md border-b border-line" : "bg-transparent"
       }`}
     >
-      <div className="mx-auto flex max-w-[1600px] items-center justify-between px-6 py-4 md:px-10 md:py-5">
+      <div className="mx-auto grid max-w-[1600px] grid-cols-[1fr_auto_1fr] items-center gap-8 px-6 py-4 md:px-10 md:py-5">
         {/* Left nav */}
-        <nav className="hidden flex-1 items-center gap-8 md:flex">
-          {NAV.slice(0, 3).map((item) => (
+        <nav className="hidden items-center gap-8 md:flex">
+          {NAV_LEFT.map((item) => (
             <Link
               key={item.to}
               to={item.to}
-              className={`link-hover text-[11px] uppercase tracking-[0.24em] transition-colors ${
-                solid ? "text-ink" : "text-ivory"
-              }`}
+              className={linkCls}
               activeProps={{ className: "opacity-100" }}
               inactiveProps={{ className: "opacity-70 hover:opacity-100" }}
             >
@@ -49,26 +56,25 @@ export function Header({ transparent = false }: { transparent?: boolean }) {
         </nav>
 
         {/* Centered logo */}
-        <Link to="/" className="flex-shrink-0 md:mx-8">
-          <div className={`flex items-center gap-3 transition-opacity ${solid ? "" : "invert-0"}`}>
-            <img
-              src={logoAsset.url}
-              alt="TRECE Arquitectura y Construcción"
-              className={`h-10 w-auto md:h-12 transition ${solid ? "" : ""}`}
-              style={solid ? { filter: "none" } : { filter: "brightness(0) invert(1)" }}
-            />
-          </div>
+        <Link to="/" className="flex items-center justify-center" aria-label="TRECE — Inicio">
+          <img
+            src={logoWhite}
+            alt="TRECE Arquitectura y Construcción"
+            className="h-9 w-auto md:h-11"
+            style={{
+              filter: solid ? "brightness(0)" : "none",
+              transition: "filter 500ms ease",
+            }}
+          />
         </Link>
 
         {/* Right nav */}
-        <nav className="hidden flex-1 items-center justify-end gap-8 md:flex">
-          {NAV.slice(3).map((item) => (
+        <nav className="hidden items-center justify-end gap-8 md:flex">
+          {NAV_RIGHT.map((item) => (
             <Link
               key={item.to}
               to={item.to}
-              className={`link-hover text-[11px] uppercase tracking-[0.24em] transition-colors ${
-                solid ? "text-ink" : "text-ivory"
-              }`}
+              className={linkCls}
               activeProps={{ className: "opacity-100" }}
               inactiveProps={{ className: "opacity-70 hover:opacity-100" }}
             >
@@ -77,7 +83,7 @@ export function Header({ transparent = false }: { transparent?: boolean }) {
           ))}
           <Link
             to="/contacto"
-            className={`ml-4 border px-5 py-2.5 text-[11px] uppercase tracking-[0.24em] transition-all duration-500 ${
+            className={`ml-2 whitespace-nowrap border px-4 py-2 text-[10px] uppercase tracking-[0.22em] transition-all duration-500 ${
               solid
                 ? "border-ink text-ink hover:bg-ink hover:text-ivory"
                 : "border-ivory text-ivory hover:bg-ivory hover:text-ink"
@@ -87,9 +93,11 @@ export function Header({ transparent = false }: { transparent?: boolean }) {
           </Link>
         </nav>
 
-        {/* Mobile */}
+        {/* Mobile toggle (right column on mobile) */}
         <button
-          className={`md:hidden text-[11px] uppercase tracking-[0.24em] ${solid ? "text-ink" : "text-ivory"}`}
+          className={`justify-self-end text-[11px] uppercase tracking-[0.22em] md:hidden ${
+            solid ? "text-ink" : "text-ivory"
+          }`}
           onClick={() => setOpen((o) => !o)}
           aria-label="Menú"
         >
@@ -98,14 +106,14 @@ export function Header({ transparent = false }: { transparent?: boolean }) {
       </div>
 
       {open && (
-        <div className="md:hidden bg-ivory border-t border-line animate-fade-in">
-          <nav className="flex flex-col px-6 py-6 gap-4">
-            {NAV.map((item) => (
+        <div className="animate-fade-in border-t border-line bg-ivory md:hidden">
+          <nav className="flex flex-col gap-4 px-6 py-6">
+            {ALL_NAV.map((item) => (
               <Link
                 key={item.to}
                 to={item.to}
                 onClick={() => setOpen(false)}
-                className="text-ink text-sm uppercase tracking-[0.24em]"
+                className="text-sm uppercase tracking-[0.22em] text-ink"
               >
                 {item.label}
               </Link>
@@ -113,7 +121,7 @@ export function Header({ transparent = false }: { transparent?: boolean }) {
             <Link
               to="/contacto"
               onClick={() => setOpen(false)}
-              className="mt-2 inline-block border border-ink px-5 py-3 text-[11px] uppercase tracking-[0.24em]"
+              className="mt-2 inline-block border border-ink px-5 py-3 text-[11px] uppercase tracking-[0.22em]"
             >
               Agendar reunión
             </Link>
