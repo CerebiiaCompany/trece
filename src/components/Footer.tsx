@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import logoAsset from "@/assets/trece-logo.png.asset.json";
+import logoTrece from "@/assets/trece-logo-transparent.png";
 
 export function Footer() {
   return (
@@ -8,10 +8,10 @@ export function Footer() {
         <div className="grid gap-14 md:grid-cols-12">
           <div className="md:col-span-5">
             <img
-              src={logoAsset.url}
+              src={logoTrece}
               alt="TRECE"
               className="h-14 w-auto"
-              style={{ filter: "brightness(0) invert(1)" }}
+              style={{ filter: "invert(1)" }}
             />
             <p className="mt-8 max-w-md font-display text-2xl leading-tight text-ivory/85 md:text-3xl">
               Diseñamos espacios que permanecen en el tiempo.
