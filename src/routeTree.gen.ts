@@ -9,10 +9,16 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as NosotrosRouteImport } from './routes/nosotros'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ProyectosIndexRouteImport } from './routes/proyectos.index'
 import { Route as ProyectosSlugRouteImport } from './routes/proyectos.$slug'
 
+const NosotrosRoute = NosotrosRouteImport.update({
+  id: '/nosotros',
+  path: '/nosotros',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -31,36 +37,47 @@ const ProyectosSlugRoute = ProyectosSlugRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/nosotros': typeof NosotrosRoute
   '/proyectos/$slug': typeof ProyectosSlugRoute
   '/proyectos/': typeof ProyectosIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/nosotros': typeof NosotrosRoute
   '/proyectos/$slug': typeof ProyectosSlugRoute
   '/proyectos': typeof ProyectosIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/nosotros': typeof NosotrosRoute
   '/proyectos/$slug': typeof ProyectosSlugRoute
   '/proyectos/': typeof ProyectosIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/proyectos/$slug' | '/proyectos/'
+  fullPaths: '/' | '/nosotros' | '/proyectos/$slug' | '/proyectos/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/proyectos/$slug' | '/proyectos'
-  id: '__root__' | '/' | '/proyectos/$slug' | '/proyectos/'
+  to: '/' | '/nosotros' | '/proyectos/$slug' | '/proyectos'
+  id: '__root__' | '/' | '/nosotros' | '/proyectos/$slug' | '/proyectos/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  NosotrosRoute: typeof NosotrosRoute
   ProyectosSlugRoute: typeof ProyectosSlugRoute
   ProyectosIndexRoute: typeof ProyectosIndexRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/nosotros': {
+      id: '/nosotros'
+      path: '/nosotros'
+      fullPath: '/nosotros'
+      preLoaderRoute: typeof NosotrosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -87,6 +104,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  NosotrosRoute: NosotrosRoute,
   ProyectosSlugRoute: ProyectosSlugRoute,
   ProyectosIndexRoute: ProyectosIndexRoute,
 }
