@@ -1,0 +1,156 @@
+export type Project = {
+  slug: string;
+  number: string;
+  title: string;
+  location: string;
+  category: string;
+  client?: string;
+  year: string;
+  tools: string[];
+  image: string;
+  challenge: string;
+  solution: string;
+};
+
+import p1 from "@/assets/p1-ecohome.jpg";
+import p2 from "@/assets/p2-multifamiliar.jpg";
+import p3 from "@/assets/p3-iglesia.jpg";
+import p4 from "@/assets/p4-terraza.jpg";
+import p5 from "@/assets/p5-vacacional.jpg";
+import p6 from "@/assets/p6-coworking.jpg";
+import p7 from "@/assets/p7-optica.jpg";
+import p8 from "@/assets/p8-torre.jpg";
+import p9 from "@/assets/p9-juvenil.jpg";
+
+export const projects: Project[] = [
+  {
+    slug: "ecohome",
+    number: "01",
+    title: "ECOHOME — Vivienda Unifamiliar",
+    location: "La Recta Corozal, Norte de Santander",
+    category: "Vivienda Unifamiliar",
+    year: "2023",
+    tools: ["AutoCAD", "SketchUp", "Lumion", "Photoshop"],
+    image: p1,
+    challenge:
+      "Diseñar una vivienda contemporánea que dialogue con el entorno tropical del Norte de Santander, integrando ventilación cruzada natural, sombras profundas y una envolvente en madera que module la luz sin sacrificar la privacidad del habitante.",
+    solution:
+      "Se propuso un volumen horizontal elevado sobre un basamento en concreto, con envolvente en listones de madera calada, ventanales corredizos de gran formato y patios interiores vegetales que garantizan confort térmico pasivo durante todo el año.",
+  },
+  {
+    slug: "multifamiliar-chapinero",
+    number: "02",
+    title: "Vivienda Multifamiliar con Locales Comerciales",
+    location: "Chapinero, Cúcuta",
+    category: "Uso Mixto",
+    year: "2024",
+    tools: ["Revit", "AutoCAD", "V-Ray", "Photoshop"],
+    image: p2,
+    challenge:
+      "Resolver en un lote urbano de esquina un programa mixto que activara la primera planta con comercio y ofreciera viviendas eficientes en pisos superiores, respetando la escala del barrio Chapinero.",
+    solution:
+      "Fachada modular con retranqueos rítmicos, primer nivel doble altura para locales comerciales y núcleo vertical centralizado que permite plantas libres y iluminación cruzada en cada apartamento.",
+  },
+  {
+    slug: "iglesia-santa-rita",
+    number: "03",
+    title: "Iglesia Santa Rita de Casia",
+    location: "Los Patios",
+    category: "Arquitectura Religiosa",
+    year: "2022",
+    tools: ["SketchUp", "V-Ray", "Photoshop"],
+    image: p3,
+    challenge:
+      "Traducir un lenguaje litúrgico tradicional a una expresión contemporánea, generando un espacio de recogimiento con luz cenital controlada y una presencia urbana serena.",
+    solution:
+      "Volumen blanco de sección basilical simplificada, cruz esculpida en bajorrelieve y vitrales verticales que dibujan la luz sobre el altar a lo largo del día.",
+  },
+  {
+    slug: "terraza-comfanorte",
+    number: "04",
+    title: "Terraza Social Comfanorte",
+    location: "Cúcuta",
+    category: "Espacio Social",
+    client: "JASA Ltda.",
+    year: "2023",
+    tools: ["SketchUp", "Lumion", "AutoCAD"],
+    image: p4,
+    challenge:
+      "Transformar una cubierta subutilizada en un espacio social flexible para eventos corporativos y familiares, resistente al clima cálido de Cúcuta.",
+    solution:
+      "Pérgola en madera laminada con iluminación integrada, mobiliario modular y jardineras perimetrales que suavizan la relación con la ciudad.",
+  },
+  {
+    slug: "centro-vacacional-comfaoriente",
+    number: "05",
+    title: "Centro Vacacional Comfaoriente",
+    location: "Chinácota",
+    category: "Turismo y Recreación",
+    year: "2024",
+    tools: ["Revit", "Lumion", "AutoCAD"],
+    image: p5,
+    challenge:
+      "Insertar un centro vacacional en un valle de topografía marcada respetando la vegetación existente y las visuales hacia la montaña.",
+    solution:
+      "Cabañas horizontales dispuestas siguiendo curvas de nivel, cubiertas ligeras a dos aguas y una piscina como pieza articuladora del conjunto.",
+  },
+  {
+    slug: "coworking-comfanorte",
+    number: "06",
+    title: "Coworking COMFANORTE",
+    location: "Cúcuta",
+    category: "Espacios Corporativos",
+    year: "2024",
+    tools: ["Revit", "V-Ray", "Twinmotion"],
+    image: p6,
+    challenge:
+      "Diseñar un coworking flexible para múltiples formatos de trabajo, con identidad propia y un lenguaje industrial cálido.",
+    solution:
+      "Cielos abiertos con instalaciones vistas, pisos en madera, mobiliario negro mate y vegetación colgante que humaniza el espacio.",
+  },
+  {
+    slug: "optica-zugo",
+    number: "07",
+    title: "Óptica ZUGO",
+    location: "Cúcuta",
+    category: "Local Comercial",
+    year: "2023",
+    tools: ["SketchUp", "V-Ray", "Photoshop"],
+    image: p7,
+    challenge:
+      "Crear una experiencia de retail sofisticada que exhibiera los productos como piezas de diseño y prolongara la permanencia del cliente.",
+    solution:
+      "Estanterías retroiluminadas en madera de nogal, paneles de listones verticales y una isla central de latón que ancla la composición.",
+  },
+  {
+    slug: "torre-miradores-uis",
+    number: "08",
+    title: "Torre Miradores UIS",
+    location: "Bucaramanga",
+    category: "Vivienda en Altura",
+    year: "2024",
+    tools: ["Revit", "Lumion", "V-Ray"],
+    image: p8,
+    challenge:
+      "Optimizar un lote reducido en Bucaramanga para obtener el máximo aprovechamiento de vistas hacia la meseta y una envolvente eficiente frente al asoleamiento.",
+    solution:
+      "Torre esbelta con balcones alternados que quiebran la fachada, celosías metálicas al poniente y un núcleo estructural que libera plantas.",
+  },
+  {
+    slug: "centro-desarrollo-juvenil",
+    number: "09",
+    title: "Centro de Desarrollo Juvenil",
+    location: "Cali",
+    category: "Equipamiento Cultural",
+    client: "JASA Ltda.",
+    year: "2024",
+    tools: ["Revit", "Lumion", "AutoCAD"],
+    image: p9,
+    challenge:
+      "Proyectar un equipamiento público capaz de convocar a la juventud del sector con una imagen contemporánea y un programa cultural exigente.",
+    solution:
+      "Fachada de planos geométricos superpuestos que dialoga con la energía del barrio, plaza pública en el acceso y un gran vestíbulo iluminado cenitalmente.",
+  },
+];
+
+export const getProject = (slug: string) => projects.find((p) => p.slug === slug);
