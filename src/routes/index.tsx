@@ -21,10 +21,10 @@ export const Route = createFileRoute("/")({
         content:
           "Estudio de arquitectura, ingeniería y construcción. Proyectos integrales, precisión técnica y diseño contemporáneo.",
       },
-      { property: "og:title", content: "TRECE — Arquitectura, Ingeniería y Construcción" },
+      { property: "og:title", content: "TRECE Arquitectura y Construcción — Diseñamos espacios que permanecen en el tiempo" },
       {
         property: "og:description",
-        content: "Creamos espacios que transforman la manera de vivir, trabajar y construir.",
+        content: "Estudio de arquitectura, ingeniería y construcción. Proyectos integrales, precisión técnica y diseño contemporáneo.",
       },
       { property: "og:url", content: "/" },
     ],

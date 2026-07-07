@@ -81,17 +81,21 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Estudio de arquitectura, ingeniería y construcción. Proyectos integrales desde la consultoría inicial hasta la entrega final.",
+          "Estudio de arquitectura, ingeniería y construcción. Proyectos integrales, precisión técnica y diseño contemporáneo.",
       },
-      { property: "og:title", content: "TRECE Arquitectura y Construcción" },
+      { property: "og:title", content: "TRECE Arquitectura y Construcción — Diseñamos espacios que permanecen en el tiempo" },
       {
         property: "og:description",
         content:
-          "Diseñamos espacios que permanecen en el tiempo. Arquitectura, ingeniería y construcción.",
+          "Estudio de arquitectura, ingeniería y construcción. Proyectos integrales, precisión técnica y diseño contemporáneo.",
       },
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "TRECE Arquitectura y Construcción" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "TRECE Arquitectura y Construcción — Diseñamos espacios que permanecen en el tiempo" },
+      { name: "twitter:description", content: "Estudio de arquitectura, ingeniería y construcción. Proyectos integrales, precisión técnica y diseño contemporáneo." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b36f79bd-1f6c-47d2-836d-eb84746b2700/id-preview-38b1c968--7fc1cea5-ac5f-4bc4-a4c6-ca4bc186d80a.lovable.app-1783465746375.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b36f79bd-1f6c-47d2-836d-eb84746b2700/id-preview-38b1c968--7fc1cea5-ac5f-4bc4-a4c6-ca4bc186d80a.lovable.app-1783465746375.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
