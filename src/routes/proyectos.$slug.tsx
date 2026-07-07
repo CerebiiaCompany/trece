@@ -96,7 +96,7 @@ function ProjectDetail() {
           <Reveal>
             <div className="eyebrow">Herramientas</div>
             <div className="mt-3 flex flex-wrap gap-2">
-              {project.tools.map((t) => (
+              {project.tools.map((t: string) => (
                 <span
                   key={t}
                   className="border border-line px-3 py-1.5 text-[11px] uppercase tracking-[0.2em] text-graphite"
