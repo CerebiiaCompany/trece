@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as ServiciosRouteImport } from './routes/servicios'
+import { Route as ProcesoRouteImport } from './routes/proceso'
 import { Route as NosotrosRouteImport } from './routes/nosotros'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ProyectosIndexRouteImport } from './routes/proyectos.index'
@@ -18,6 +19,11 @@ import { Route as ProyectosSlugRouteImport } from './routes/proyectos.$slug'
 const ServiciosRoute = ServiciosRouteImport.update({
   id: '/servicios',
   path: '/servicios',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProcesoRoute = ProcesoRouteImport.update({
+  id: '/proceso',
+  path: '/proceso',
   getParentRoute: () => rootRouteImport,
 } as any)
 const NosotrosRoute = NosotrosRouteImport.update({
@@ -44,6 +50,7 @@ const ProyectosSlugRoute = ProyectosSlugRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/nosotros': typeof NosotrosRoute
+  '/proceso': typeof ProcesoRoute
   '/servicios': typeof ServiciosRoute
   '/proyectos/$slug': typeof ProyectosSlugRoute
   '/proyectos/': typeof ProyectosIndexRoute
@@ -51,6 +58,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/nosotros': typeof NosotrosRoute
+  '/proceso': typeof ProcesoRoute
   '/servicios': typeof ServiciosRoute
   '/proyectos/$slug': typeof ProyectosSlugRoute
   '/proyectos': typeof ProyectosIndexRoute
@@ -59,6 +67,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/nosotros': typeof NosotrosRoute
+  '/proceso': typeof ProcesoRoute
   '/servicios': typeof ServiciosRoute
   '/proyectos/$slug': typeof ProyectosSlugRoute
   '/proyectos/': typeof ProyectosIndexRoute
@@ -68,15 +77,23 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/nosotros'
+    | '/proceso'
     | '/servicios'
     | '/proyectos/$slug'
     | '/proyectos/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/nosotros' | '/servicios' | '/proyectos/$slug' | '/proyectos'
+  to:
+    | '/'
+    | '/nosotros'
+    | '/proceso'
+    | '/servicios'
+    | '/proyectos/$slug'
+    | '/proyectos'
   id:
     | '__root__'
     | '/'
     | '/nosotros'
+    | '/proceso'
     | '/servicios'
     | '/proyectos/$slug'
     | '/proyectos/'
@@ -85,6 +102,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   NosotrosRoute: typeof NosotrosRoute
+  ProcesoRoute: typeof ProcesoRoute
   ServiciosRoute: typeof ServiciosRoute
   ProyectosSlugRoute: typeof ProyectosSlugRoute
   ProyectosIndexRoute: typeof ProyectosIndexRoute
@@ -97,6 +115,13 @@ declare module '@tanstack/react-router' {
       path: '/servicios'
       fullPath: '/servicios'
       preLoaderRoute: typeof ServiciosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/proceso': {
+      id: '/proceso'
+      path: '/proceso'
+      fullPath: '/proceso'
+      preLoaderRoute: typeof ProcesoRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/nosotros': {
@@ -133,6 +158,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   NosotrosRoute: NosotrosRoute,
+  ProcesoRoute: ProcesoRoute,
   ServiciosRoute: ServiciosRoute,
   ProyectosSlugRoute: ProyectosSlugRoute,
   ProyectosIndexRoute: ProyectosIndexRoute,
