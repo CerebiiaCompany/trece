@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import logoWhite from "@/assets/trece-logo-white.png";
+import logoTrece from "@/assets/trece-logo-transparent.png";
 
 const NAV_LEFT = [
   { to: "/", label: "Inicio" },
@@ -58,11 +58,11 @@ export function Header({ transparent = false }: { transparent?: boolean }) {
         {/* Centered logo */}
         <Link to="/" className="flex items-center justify-center" aria-label="TRECE — Inicio">
           <img
-            src={logoWhite}
+            src={logoTrece}
             alt="TRECE Arquitectura y Construcción"
             className="h-9 w-auto md:h-11"
             style={{
-              filter: solid ? "brightness(0)" : "none",
+              filter: solid ? "none" : "invert(1)",
               transition: "filter 500ms ease",
             }}
           />
