@@ -31,6 +31,12 @@ import cobre3 from "@/assets/capilla-cobre-3.jpg.asset.json";
 import cobre4 from "@/assets/capilla-cobre-4.jpg.asset.json";
 import cobre5 from "@/assets/capilla-cobre-5.jpg.asset.json";
 import cobre6 from "@/assets/capilla-cobre-6.jpg.asset.json";
+import dn2 from "@/assets/divino-nino-2.jpg.asset.json";
+import dn6 from "@/assets/divino-nino-6.jpg.asset.json";
+import dn7 from "@/assets/divino-nino-7.jpg.asset.json";
+import dn8 from "@/assets/divino-nino-8.jpg.asset.json";
+import dn11 from "@/assets/divino-nino-11.jpg.asset.json";
+import dn12 from "@/assets/divino-nino-12.jpg.asset.json";
 
 
 export const projects: Project[] = [
@@ -178,7 +184,23 @@ export const projects: Project[] = [
     solution:
       "Una nave única de cubierta inclinada con vitrales ojivales contemporáneos en marco metálico negro, torre-campanario en ladrillo con cruz dorada embebida, presbiterio en madera y mármol, e iluminación lineal integrada que acompaña la geometría del cielo raso.",
   },
+  {
+    slug: "capilla-divino-nino-la-campina",
+    number: "11",
+    title: "Capilla Divino Niño La Campiña",
+    location: "La Campiña, Cúcuta",
+    category: "Arquitectura Religiosa",
+    year: "2024",
+    tools: ["Revit", "SketchUp", "V-Ray", "Photoshop"],
+    image: dn2.url,
+    gallery: [dn2.url, dn12.url, dn6.url, dn8.url, dn7.url, dn11.url],
+    challenge:
+      "Proyectar una capilla y su despacho parroquial en un lote alargado con fuerte pendiente, resolviendo accesibilidad, ventilación e iluminación natural sin renunciar a una imagen urbana sobria y reconocible en el barrio.",
+    solution:
+      "Muros en ladrillo a la vista combinados con paños blancos escalonados que filtran la luz por rendijas verticales, torre-campanario en ladrillo gris con cruz embebida, acceso escalonado con jardineras y un interior de nave única en mármol claro y madera con presbiterio elevado.",
+  },
 ];
+
 
 
 export const getProject = (slug: string) => projects.find((p) => p.slug === slug);
@@ -191,6 +213,7 @@ export const projectCategory: Record<string, CategorySlug> = {
   "torre-miradores-uis": "viviendas",
   "iglesia-santa-rita": "iglesias",
   "capilla-nuestra-senora-del-cobre": "iglesias",
+  "capilla-divino-nino-la-campina": "iglesias",
   "coworking-comfanorte": "comercial",
   "optica-zugo": "comercial",
   "terraza-comfanorte": "remodelaciones",

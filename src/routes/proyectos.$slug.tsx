@@ -141,38 +141,30 @@ function ProjectDetail() {
       </section>
 
       {/* Galería masonry */}
-      <section className="mx-auto max-w-[1600px] px-6 py-24 md:px-10 md:py-32">
-        <Reveal>
-          <span className="eyebrow">Galería</span>
-          <h2 className="display-md mt-6">Alta resolución.</h2>
-        </Reveal>
+      {project.gallery?.length ? (
+        <section className="mx-auto max-w-[1600px] px-6 py-24 md:px-10 md:py-32">
+          <Reveal>
+            <span className="eyebrow">Galería</span>
+            <h2 className="display-md mt-6">Alta resolución.</h2>
+          </Reveal>
 
-        <div className="mt-16 columns-1 gap-6 md:columns-2 lg:columns-3 [&>*]:mb-6">
-          {(project.gallery ?? [project.image, project.image, project.image, project.image, project.image]).map(
-            (src: string, i: number) => (
+          <div className="mt-16 columns-1 gap-6 md:columns-2 lg:columns-3 [&>*]:mb-6">
+            {project.gallery.map((src: string, i: number) => (
               <Reveal key={i} delay={i * 80} slow>
                 <div className="image-hover overflow-hidden bg-stone break-inside-avoid">
                   <img
                     src={src}
                     alt={`${project.title} — imagen ${i + 1}`}
-                    className={`w-full object-cover ${
-                      project.gallery
-                        ? ""
-                        : i % 3 === 0
-                          ? "aspect-[4/5]"
-                          : i % 3 === 1
-                            ? "aspect-[4/3]"
-                            : "aspect-square"
-                    }`}
+                    className="w-full object-cover"
                     loading="lazy"
                   />
                 </div>
               </Reveal>
-            ),
-          )}
-        </div>
+            ))}
+          </div>
+        </section>
+      ) : null}
 
-      </section>
 
       {/* Relacionados */}
       <section className="border-t border-line py-24 md:py-32">
