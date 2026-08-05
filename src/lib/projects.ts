@@ -190,6 +190,7 @@ export const projectCategory: Record<string, CategorySlug> = {
   "multifamiliar-chapinero": "viviendas",
   "torre-miradores-uis": "viviendas",
   "iglesia-santa-rita": "iglesias",
+  "capilla-nuestra-senora-del-cobre": "iglesias",
   "coworking-comfanorte": "comercial",
   "optica-zugo": "comercial",
   "terraza-comfanorte": "remodelaciones",
