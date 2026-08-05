@@ -154,3 +154,60 @@ export const projects: Project[] = [
 ];
 
 export const getProject = (slug: string) => projects.find((p) => p.slug === slug);
+
+export type CategorySlug = "comercial" | "iglesias" | "viviendas" | "remodelaciones" | "otros";
+
+export const projectCategory: Record<string, CategorySlug> = {
+  ecohome: "viviendas",
+  "multifamiliar-chapinero": "viviendas",
+  "torre-miradores-uis": "viviendas",
+  "iglesia-santa-rita": "iglesias",
+  "coworking-comfanorte": "comercial",
+  "optica-zugo": "comercial",
+  "terraza-comfanorte": "remodelaciones",
+  "centro-vacacional-comfaoriente": "otros",
+  "centro-desarrollo-juvenil": "otros",
+};
+
+export const categories: {
+  slug: CategorySlug;
+  number: string;
+  title: string;
+  description: string;
+}[] = [
+  {
+    slug: "comercial",
+    number: "01",
+    title: "Comercial",
+    description: "Retail, oficinas y espacios corporativos con identidad y experiencia de marca.",
+  },
+  {
+    slug: "iglesias",
+    number: "02",
+    title: "Iglesias",
+    description: "Arquitectura religiosa contemporánea, luz controlada y espacios de recogimiento.",
+  },
+  {
+    slug: "viviendas",
+    number: "03",
+    title: "Viviendas",
+    description: "Vivienda unifamiliar, multifamiliar y en altura diseñada para habitar mejor.",
+  },
+  {
+    slug: "remodelaciones",
+    number: "04",
+    title: "Remodelaciones",
+    description: "Intervenciones que reactivan espacios existentes con precisión técnica.",
+  },
+  {
+    slug: "otros",
+    number: "05",
+    title: "Otros",
+    description: "Equipamientos culturales, turismo y proyectos de escala urbana.",
+  },
+];
+
+export const getCategory = (slug: string) => categories.find((c) => c.slug === slug);
+
+export const getProjectsByCategory = (slug: string) =>
+  projects.filter((p) => projectCategory[p.slug] === slug);
