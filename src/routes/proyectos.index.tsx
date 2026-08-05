@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Reveal } from "@/components/Reveal";
-import { projects } from "@/lib/projects";
+import { categories, getProjectsByCategory } from "@/lib/projects";
 
 export const Route = createFileRoute("/proyectos/")({
   component: ProjectsIndex,
@@ -12,10 +12,15 @@ export const Route = createFileRoute("/proyectos/")({
       {
         name: "description",
         content:
-          "Portafolio de proyectos de arquitectura, vivienda, equipamiento y espacios corporativos desarrollados por TRECE.",
+          "Portafolio por categorías: comercial, iglesias, viviendas, remodelaciones y otros proyectos de TRECE.",
       },
       { property: "og:title", content: "Portafolio de proyectos — TRECE" },
-      { property: "og:description", content: "Vivienda, equipamientos, retail y espacios corporativos." },
+      {
+        property: "og:description",
+        content: "Comercial, iglesias, viviendas, remodelaciones y más.",
+      },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { property: "og:url", content: "/proyectos" },
     ],
     links: [{ rel: "canonical", href: "/proyectos" }],
@@ -35,40 +40,44 @@ function ProjectsIndex() {
         </Reveal>
         <Reveal delay={300}>
           <p className="mt-8 max-w-2xl text-[15px] leading-[1.75] text-graphite">
-            Una selección curada de los proyectos que han definido la práctica de TRECE:
-            vivienda, equipamiento cultural, espacios corporativos y arquitectura religiosa.
+            Explore el trabajo de TRECE por categoría: cada línea reúne proyectos con retos,
+            escalas y lenguajes propios.
           </p>
         </Reveal>
       </section>
 
       <section className="mx-auto max-w-[1600px] px-6 pb-32 md:px-10 md:pb-40">
-        <div className="grid grid-cols-1 gap-x-8 gap-y-20 md:grid-cols-2">
-          {projects.map((p, i) => (
-            <Reveal key={p.slug} delay={(i % 2) * 100} className={i % 2 === 1 ? "md:mt-24" : ""}>
-              <Link to="/proyectos/$slug" params={{ slug: p.slug }} className="group block">
-                <div className="image-hover aspect-[4/5] overflow-hidden bg-stone">
-                  <img
-                    src={p.image}
-                    alt={p.title}
-                    className="h-full w-full object-cover"
-                    width={1600}
-                    height={1200}
-                    loading="lazy"
-                  />
-                </div>
-                <div className="mt-6 flex items-baseline justify-between gap-6">
-                  <div>
-                    <div className="text-[10px] tracking-[0.28em] text-mute uppercase">
-                      {p.number} · {p.category}
-                    </div>
-                    <h2 className="font-display text-3xl mt-3 md:text-4xl">{p.title}</h2>
-                    <div className="mt-2 text-sm text-graphite">{p.location}</div>
+        <div className="grid grid-cols-1 gap-x-8 gap-y-16 md:grid-cols-2">
+          {categories.map((c, i) => {
+            const items = getProjectsByCategory(c.slug);
+            const cover = items[0]?.image;
+            return (
+              <Reveal key={c.slug} delay={(i % 2) * 100} className={i % 2 === 1 ? "md:mt-20" : ""}>
+                <Link to="/proyectos/categoria/$categoria" params={{ categoria: c.slug }} className="group block">
+                  <div className="image-hover aspect-[4/3] overflow-hidden bg-stone">
+                    {cover ? (
+                      <img
+                        src={cover}
+                        alt={`Categoría ${c.title}`}
+                        className="h-full w-full object-cover"
+                        loading="lazy"
+                      />
+                    ) : null}
                   </div>
-                  <div className="text-[11px] uppercase tracking-[0.24em] text-mute">{p.year}</div>
-                </div>
-              </Link>
-            </Reveal>
-          ))}
+                  <div className="mt-6 flex items-baseline justify-between gap-6">
+                    <div>
+                      <div className="text-[10px] tracking-[0.28em] text-mute uppercase">
+                        {c.number} · {items.length} {items.length === 1 ? "proyecto" : "proyectos"}
+                      </div>
+                      <h2 className="font-display text-3xl mt-3 md:text-4xl">{c.title}</h2>
+                      <p className="mt-2 max-w-md text-sm text-graphite">{c.description}</p>
+                    </div>
+                    <div className="text-[11px] uppercase tracking-[0.24em] text-mute">Ver</div>
+                  </div>
+                </Link>
+              </Reveal>
+            );
+          })}
         </div>
       </section>
 
