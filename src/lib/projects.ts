@@ -233,6 +233,7 @@ export const projectCategory: Record<string, CategorySlug> = {
   "iglesia-santa-rita": "iglesias",
   "capilla-nuestra-senora-del-cobre": "iglesias",
   "capilla-divino-nino-la-campina": "iglesias",
+  "casa-cural-torcoroma": "iglesias",
   "coworking-comfanorte": "comercial",
   "optica-zugo": "comercial",
   "terraza-comfanorte": "remodelaciones",
