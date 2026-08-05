@@ -167,12 +167,15 @@ function ProjectDetail() {
 
           <div className="mt-16 columns-1 gap-6 md:columns-2 lg:columns-3 [&>*]:mb-6">
             {project.gallery.map((src: string, i: number) => (
-              <div key={i} className="image-hover overflow-hidden bg-stone break-inside-avoid">
+              <div key={src} className="image-hover aspect-video overflow-hidden bg-stone break-inside-avoid">
                 <img
                   src={src}
                   alt={`${project.title} — imagen ${i + 1}`}
-                  className="w-full object-cover"
-                  loading="lazy"
+                  className="h-full w-full object-cover"
+                  loading="eager"
+                  decoding="async"
+                  width={1920}
+                  height={1080}
                 />
               </div>
             ))}
