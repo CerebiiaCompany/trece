@@ -37,6 +37,10 @@ import dn7 from "@/assets/divino-nino-7.jpg.asset.json";
 import dn8 from "@/assets/divino-nino-8.jpg.asset.json";
 import dn11 from "@/assets/divino-nino-11.jpg.asset.json";
 import dn12 from "@/assets/divino-nino-12.jpg.asset.json";
+import tor1 from "@/assets/torcoroma-1.jpg.asset.json";
+import tor4 from "@/assets/torcoroma-4.jpg.asset.json";
+import tor7 from "@/assets/torcoroma-7-2.jpg.asset.json";
+import tor17 from "@/assets/torcoroma-17.jpg.asset.json";
 
 
 export const projects: Project[] = [
@@ -199,6 +203,21 @@ export const projects: Project[] = [
     solution:
       "Muros en ladrillo a la vista combinados con paños blancos escalonados que filtran la luz por rendijas verticales, torre-campanario en ladrillo gris con cruz embebida, acceso escalonado con jardineras y un interior de nave única en mármol claro y madera con presbiterio elevado.",
   },
+  {
+    slug: "casa-cural-torcoroma",
+    number: "12",
+    title: "Casa Cural Nuestra Señora de Torcoroma",
+    location: "Cúcuta, Norte de Santander",
+    category: "Arquitectura Religiosa",
+    year: "2024",
+    tools: ["Revit", "SketchUp", "V-Ray", "Photoshop"],
+    image: tor1.url,
+    gallery: [tor1.url, tor4.url, tor7.url, tor17.url],
+    challenge:
+      "Resolver en un lote alargado la casa cural y el despacho parroquial, integrando atención al público, áreas administrativas y la vivienda del sacerdote con privacidad, ventilación cruzada e iluminación natural en todo el recorrido.",
+    solution:
+      "Una planta organizada en torno a un patio central longitudinal con pérgola metálica y jardineras, que separa el área pública del despacho de la zona íntima de habitaciones; fachada urbana en ladrillo gris, celosías de madera y voladizo continuo que protege el acceso.",
+  },
 ];
 
 
@@ -214,6 +233,7 @@ export const projectCategory: Record<string, CategorySlug> = {
   "iglesia-santa-rita": "iglesias",
   "capilla-nuestra-senora-del-cobre": "iglesias",
   "capilla-divino-nino-la-campina": "iglesias",
+  "casa-cural-torcoroma": "iglesias",
   "coworking-comfanorte": "comercial",
   "optica-zugo": "comercial",
   "terraza-comfanorte": "remodelaciones",
