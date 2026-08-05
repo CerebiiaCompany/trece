@@ -213,6 +213,7 @@ export const projectCategory: Record<string, CategorySlug> = {
   "torre-miradores-uis": "viviendas",
   "iglesia-santa-rita": "iglesias",
   "capilla-nuestra-senora-del-cobre": "iglesias",
+  "capilla-divino-nino-la-campina": "iglesias",
   "coworking-comfanorte": "comercial",
   "optica-zugo": "comercial",
   "terraza-comfanorte": "remodelaciones",
