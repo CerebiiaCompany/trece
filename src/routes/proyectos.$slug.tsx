@@ -2,7 +2,7 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Reveal } from "@/components/Reveal";
-import { getProject, projects } from "@/lib/projects";
+import { getProject, projects, projectCategory, getCategory } from "@/lib/projects";
 
 export const Route = createFileRoute("/proyectos/$slug")({
   component: ProjectDetail,
@@ -46,6 +46,8 @@ export const Route = createFileRoute("/proyectos/$slug")({
 
 function ProjectDetail() {
   const { project } = Route.useLoaderData();
+  const categorySlug = projectCategory[project.slug];
+  const category = categorySlug ? getCategory(categorySlug) : undefined;
   const related = projects.filter((p) => p.slug !== project.slug).slice(0, 3);
 
   return (
@@ -78,7 +80,22 @@ function ProjectDetail() {
 
       {/* Ficha */}
       <section className="mx-auto max-w-[1600px] px-6 py-24 md:px-10 md:py-32">
-        <div className="grid gap-10 border-y border-line py-12 md:grid-cols-4">
+        <Reveal>
+          {category ? (
+            <Link
+              to="/proyectos/categoria/$categoria"
+              params={{ categoria: category.slug }}
+              className="eyebrow link-hover inline-block"
+            >
+              ← Volver a {category.title}
+            </Link>
+          ) : (
+            <Link to="/proyectos" className="eyebrow link-hover inline-block">
+              ← Volver al portafolio
+            </Link>
+          )}
+        </Reveal>
+        <div className="mt-10 grid gap-10 border-y border-line py-12 md:grid-cols-4">
           {[
             { label: "Ubicación", value: project.location },
             { label: "Categoría", value: project.category },
@@ -150,16 +167,14 @@ function ProjectDetail() {
 
           <div className="mt-16 columns-1 gap-6 md:columns-2 lg:columns-3 [&>*]:mb-6">
             {project.gallery.map((src: string, i: number) => (
-              <Reveal key={i} delay={i * 80} slow>
-                <div className="image-hover overflow-hidden bg-stone break-inside-avoid">
-                  <img
-                    src={src}
-                    alt={`${project.title} — imagen ${i + 1}`}
-                    className="w-full object-cover"
-                    loading="lazy"
-                  />
-                </div>
-              </Reveal>
+              <div key={i} className="image-hover overflow-hidden bg-stone break-inside-avoid">
+                <img
+                  src={src}
+                  alt={`${project.title} — imagen ${i + 1}`}
+                  className="w-full object-cover"
+                  loading="lazy"
+                />
+              </div>
             ))}
           </div>
         </section>
