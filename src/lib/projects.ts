@@ -163,7 +163,23 @@ export const projects: Project[] = [
     solution:
       "Fachada de planos geométricos superpuestos que dialoga con la energía del barrio, plaza pública en el acceso y un gran vestíbulo iluminado cenitalmente.",
   },
+  {
+    slug: "capilla-nuestra-senora-del-cobre",
+    number: "10",
+    title: "Capilla Nuestra Señora de la Caridad del Cobre",
+    location: "Cúcuta, Norte de Santander",
+    category: "Arquitectura Religiosa",
+    year: "2024",
+    tools: ["Revit", "SketchUp", "V-Ray", "Photoshop"],
+    image: cobre4.url,
+    gallery: [cobre4.url, cobre1.url, cobre2.url, cobre5.url, cobre3.url, cobre6.url],
+    challenge:
+      "Resolver una capilla de escala barrial en un lote urbano estrecho, capaz de albergar la asamblea con dignidad litúrgica, buena acústica y ventilación natural, y a la vez ofrecer una imagen reconocible desde la calle.",
+    solution:
+      "Una nave única de cubierta inclinada con vitrales ojivales contemporáneos en marco metálico negro, torre-campanario en ladrillo con cruz dorada embebida, presbiterio en madera y mármol, e iluminación lineal integrada que acompaña la geometría del cielo raso.",
+  },
 ];
+
 
 export const getProject = (slug: string) => projects.find((p) => p.slug === slug);
 
