@@ -31,6 +31,12 @@ import cobre3 from "@/assets/capilla-cobre-3.jpg.asset.json";
 import cobre4 from "@/assets/capilla-cobre-4.jpg.asset.json";
 import cobre5 from "@/assets/capilla-cobre-5.jpg.asset.json";
 import cobre6 from "@/assets/capilla-cobre-6.jpg.asset.json";
+import dn2 from "@/assets/divino-nino-2.jpg.asset.json";
+import dn6 from "@/assets/divino-nino-6.jpg.asset.json";
+import dn7 from "@/assets/divino-nino-7.jpg.asset.json";
+import dn8 from "@/assets/divino-nino-8.jpg.asset.json";
+import dn11 from "@/assets/divino-nino-11.jpg.asset.json";
+import dn12 from "@/assets/divino-nino-12.jpg.asset.json";
 
 
 export const projects: Project[] = [
