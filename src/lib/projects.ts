@@ -16,7 +16,7 @@ export type Project = {
 
 import p1 from "@/assets/p1-ecohome.jpg";
 import p2 from "@/assets/p2-multifamiliar.jpg";
-import p3 from "@/assets/p3-iglesia.jpg";
+
 import p4 from "@/assets/p4-terraza.jpg";
 import p5 from "@/assets/p5-vacacional.jpg";
 import p6 from "@/assets/p6-coworking.jpg";
