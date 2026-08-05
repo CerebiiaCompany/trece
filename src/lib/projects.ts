@@ -8,6 +8,8 @@ export type Project = {
   year: string;
   tools: string[];
   image: string;
+  gallery?: string[];
+  pdf?: string;
   challenge: string;
   solution: string;
 };
@@ -21,6 +23,15 @@ import p6 from "@/assets/p6-coworking.jpg";
 import p7 from "@/assets/p7-optica.jpg";
 import p8 from "@/assets/p8-torre.jpg";
 import p9 from "@/assets/p9-juvenil.jpg";
+import santaRitaHero from "@/assets/santa-rita-fachada.png.asset.json";
+import santaRitaPdf from "@/assets/santa-rita-de-casia.pdf.asset.json";
+import cobre1 from "@/assets/capilla-cobre-1.jpg.asset.json";
+import cobre2 from "@/assets/capilla-cobre-2.jpg.asset.json";
+import cobre3 from "@/assets/capilla-cobre-3.jpg.asset.json";
+import cobre4 from "@/assets/capilla-cobre-4.jpg.asset.json";
+import cobre5 from "@/assets/capilla-cobre-5.jpg.asset.json";
+import cobre6 from "@/assets/capilla-cobre-6.jpg.asset.json";
+
 
 export const projects: Project[] = [
   {
