@@ -70,7 +70,8 @@ export const projects: Project[] = [
     category: "Arquitectura Religiosa",
     year: "2022",
     tools: ["SketchUp", "V-Ray", "Photoshop"],
-    image: p3,
+    image: santaRitaHero.url,
+    pdf: santaRitaPdf.url,
     challenge:
       "Traducir un lenguaje litúrgico tradicional a una expresión contemporánea, generando un espacio de recogimiento con luz cenital controlada y una presencia urbana serena.",
     solution:
