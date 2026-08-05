@@ -2,6 +2,7 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Reveal } from "@/components/Reveal";
+import type { Project } from "@/lib/projects";
 import { categories, getCategory, getProjectsByCategory } from "@/lib/projects";
 
 export const Route = createFileRoute("/proyectos/categoria/$categoria")({
@@ -9,7 +10,8 @@ export const Route = createFileRoute("/proyectos/categoria/$categoria")({
   loader: ({ params }) => {
     const category = getCategory(params.categoria);
     if (!category) throw notFound();
-    return { category, items: getProjectsByCategory(category.slug) };
+    const items: Project[] = getProjectsByCategory(category.slug);
+    return { category, items };
   },
   head: ({ loaderData }) => {
     if (!loaderData) {
@@ -91,7 +93,7 @@ function CategoryPage() {
           </p>
         ) : (
           <div className="grid grid-cols-1 gap-x-8 gap-y-20 md:grid-cols-2">
-            {items.map((p, i) => (
+            {items.map((p: Project, i: number) => (
               <Reveal key={p.slug} delay={(i % 2) * 100} className={i % 2 === 1 ? "md:mt-24" : ""}>
                 <Link to="/proyectos/$slug" params={{ slug: p.slug }} className="group block">
                   <div className="image-hover aspect-[4/5] overflow-hidden bg-stone">

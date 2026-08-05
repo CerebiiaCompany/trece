@@ -17,6 +17,7 @@ import { Route as ContactoRouteImport } from './routes/contacto'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ProyectosIndexRouteImport } from './routes/proyectos.index'
 import { Route as ProyectosSlugRouteImport } from './routes/proyectos.$slug'
+import { Route as ProyectosCategoriaCategoriaRouteImport } from './routes/proyectos.categoria.$categoria'
 
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
@@ -58,6 +59,12 @@ const ProyectosSlugRoute = ProyectosSlugRouteImport.update({
   path: '/proyectos/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ProyectosCategoriaCategoriaRoute =
+  ProyectosCategoriaCategoriaRouteImport.update({
+    id: '/proyectos/categoria/$categoria',
+    path: '/proyectos/categoria/$categoria',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -68,6 +75,7 @@ export interface FileRoutesByFullPath {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/proyectos/$slug': typeof ProyectosSlugRoute
   '/proyectos/': typeof ProyectosIndexRoute
+  '/proyectos/categoria/$categoria': typeof ProyectosCategoriaCategoriaRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -78,6 +86,7 @@ export interface FileRoutesByTo {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/proyectos/$slug': typeof ProyectosSlugRoute
   '/proyectos': typeof ProyectosIndexRoute
+  '/proyectos/categoria/$categoria': typeof ProyectosCategoriaCategoriaRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -89,6 +98,7 @@ export interface FileRoutesById {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/proyectos/$slug': typeof ProyectosSlugRoute
   '/proyectos/': typeof ProyectosIndexRoute
+  '/proyectos/categoria/$categoria': typeof ProyectosCategoriaCategoriaRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -101,6 +111,7 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/proyectos/$slug'
     | '/proyectos/'
+    | '/proyectos/categoria/$categoria'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -111,6 +122,7 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/proyectos/$slug'
     | '/proyectos'
+    | '/proyectos/categoria/$categoria'
   id:
     | '__root__'
     | '/'
@@ -121,6 +133,7 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/proyectos/$slug'
     | '/proyectos/'
+    | '/proyectos/categoria/$categoria'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -132,6 +145,7 @@ export interface RootRouteChildren {
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   ProyectosSlugRoute: typeof ProyectosSlugRoute
   ProyectosIndexRoute: typeof ProyectosIndexRoute
+  ProyectosCategoriaCategoriaRoute: typeof ProyectosCategoriaCategoriaRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -192,6 +206,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProyectosSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/proyectos/categoria/$categoria': {
+      id: '/proyectos/categoria/$categoria'
+      path: '/proyectos/categoria/$categoria'
+      fullPath: '/proyectos/categoria/$categoria'
+      preLoaderRoute: typeof ProyectosCategoriaCategoriaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -204,17 +225,8 @@ const rootRouteChildren: RootRouteChildren = {
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   ProyectosSlugRoute: ProyectosSlugRoute,
   ProyectosIndexRoute: ProyectosIndexRoute,
+  ProyectosCategoriaCategoriaRoute: ProyectosCategoriaCategoriaRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}
