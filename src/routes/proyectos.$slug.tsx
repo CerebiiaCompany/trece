@@ -46,6 +46,8 @@ export const Route = createFileRoute("/proyectos/$slug")({
 
 function ProjectDetail() {
   const { project } = Route.useLoaderData();
+  const categorySlug = projectCategory[project.slug];
+  const category = categorySlug ? getCategory(categorySlug) : undefined;
   const related = projects.filter((p) => p.slug !== project.slug).slice(0, 3);
 
   return (
