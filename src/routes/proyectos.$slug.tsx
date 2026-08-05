@@ -2,7 +2,7 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Reveal } from "@/components/Reveal";
-import { getProject, projects } from "@/lib/projects";
+import { getProject, projects, projectCategory, getCategory } from "@/lib/projects";
 
 export const Route = createFileRoute("/proyectos/$slug")({
   component: ProjectDetail,
