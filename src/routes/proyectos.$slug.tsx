@@ -106,7 +106,22 @@ function ProjectDetail() {
               ))}
             </div>
           </Reveal>
+          {project.pdf ? (
+            <Reveal delay={120}>
+              <div className="eyebrow">Documento</div>
+              <a
+                href={project.pdf}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 inline-flex items-center gap-3 border border-ink bg-ink px-6 py-3 text-[11px] uppercase tracking-[0.24em] text-ivory transition-colors hover:bg-transparent hover:text-ink"
+              >
+                Ver el proyecto en detalle (PDF)
+                <span aria-hidden>↗</span>
+              </a>
+            </Reveal>
+          ) : null}
         </div>
+
       </section>
 
       {/* Reto & solución */}
