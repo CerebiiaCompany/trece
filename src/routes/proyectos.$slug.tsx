@@ -80,7 +80,22 @@ function ProjectDetail() {
 
       {/* Ficha */}
       <section className="mx-auto max-w-[1600px] px-6 py-24 md:px-10 md:py-32">
-        <div className="grid gap-10 border-y border-line py-12 md:grid-cols-4">
+        <Reveal>
+          {category ? (
+            <Link
+              to="/proyectos/categoria/$categoria"
+              params={{ categoria: category.slug }}
+              className="eyebrow link-hover inline-block"
+            >
+              ← Volver a {category.title}
+            </Link>
+          ) : (
+            <Link to="/proyectos" className="eyebrow link-hover inline-block">
+              ← Volver al portafolio
+            </Link>
+          )}
+        </Reveal>
+        <div className="mt-10 grid gap-10 border-y border-line py-12 md:grid-cols-4">
           {[
             { label: "Ubicación", value: project.location },
             { label: "Categoría", value: project.category },
