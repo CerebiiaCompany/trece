@@ -203,6 +203,21 @@ export const projects: Project[] = [
     solution:
       "Muros en ladrillo a la vista combinados con paños blancos escalonados que filtran la luz por rendijas verticales, torre-campanario en ladrillo gris con cruz embebida, acceso escalonado con jardineras y un interior de nave única en mármol claro y madera con presbiterio elevado.",
   },
+  {
+    slug: "casa-cural-torcoroma",
+    number: "12",
+    title: "Casa Cural Nuestra Señora de Torcoroma",
+    location: "Cúcuta, Norte de Santander",
+    category: "Arquitectura Religiosa",
+    year: "2024",
+    tools: ["Revit", "SketchUp", "V-Ray", "Photoshop"],
+    image: tor1.url,
+    gallery: [tor1.url, tor4.url, tor7.url, tor17.url],
+    challenge:
+      "Resolver en un lote alargado la casa cural y el despacho parroquial, integrando atención al público, áreas administrativas y la vivienda del sacerdote con privacidad, ventilación cruzada e iluminación natural en todo el recorrido.",
+    solution:
+      "Una planta organizada en torno a un patio central longitudinal con pérgola metálica y jardineras, que separa el área pública del despacho de la zona íntima de habitaciones; fachada urbana en ladrillo gris, celosías de madera y voladizo continuo que protege el acceso.",
+  },
 ];
 
 
