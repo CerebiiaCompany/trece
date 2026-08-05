@@ -150,16 +150,14 @@ function ProjectDetail() {
 
           <div className="mt-16 columns-1 gap-6 md:columns-2 lg:columns-3 [&>*]:mb-6">
             {project.gallery.map((src: string, i: number) => (
-              <Reveal key={i} delay={i * 80} slow>
-                <div className="image-hover overflow-hidden bg-stone break-inside-avoid">
-                  <img
-                    src={src}
-                    alt={`${project.title} — imagen ${i + 1}`}
-                    className="w-full object-cover"
-                    loading="lazy"
-                  />
-                </div>
-              </Reveal>
+              <div key={i} className="image-hover overflow-hidden bg-stone break-inside-avoid">
+                <img
+                  src={src}
+                  alt={`${project.title} — imagen ${i + 1}`}
+                  className="w-full object-cover"
+                  loading="lazy"
+                />
+              </div>
             ))}
           </div>
         </section>
