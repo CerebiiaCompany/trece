@@ -37,6 +37,10 @@ import dn7 from "@/assets/divino-nino-7.jpg.asset.json";
 import dn8 from "@/assets/divino-nino-8.jpg.asset.json";
 import dn11 from "@/assets/divino-nino-11.jpg.asset.json";
 import dn12 from "@/assets/divino-nino-12.jpg.asset.json";
+import tor1 from "@/assets/torcoroma-1.jpg.asset.json";
+import tor4 from "@/assets/torcoroma-4.jpg.asset.json";
+import tor7 from "@/assets/torcoroma-7-2.jpg.asset.json";
+import tor17 from "@/assets/torcoroma-17.jpg.asset.json";
 
 
 export const projects: Project[] = [
