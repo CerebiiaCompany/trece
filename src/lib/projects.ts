@@ -64,6 +64,13 @@ import slDespues3 from "@/assets/sanluis-despues-3.jpg.asset.json";
 import slDespues4 from "@/assets/sanluis-despues-4.jpg.asset.json";
 import slDespues5 from "@/assets/sanluis-despues-5.jpg.asset.json";
 import slDespues6 from "@/assets/sanluis-despues-6.jpg.asset.json";
+import colsag1 from "@/assets/colsag-1.jpg.asset.json";
+import colsag2 from "@/assets/colsag-2.jpg.asset.json";
+import colsag3 from "@/assets/colsag-3.jpg.asset.json";
+import colsag4 from "@/assets/colsag-4.jpg.asset.json";
+import colsag5 from "@/assets/colsag-5.jpg.asset.json";
+import colsag6 from "@/assets/colsag-6.jpg.asset.json";
+import colsag7 from "@/assets/colsag-7.jpg.asset.json";
 
 
 export const projects: Project[] = [
