@@ -55,7 +55,7 @@ function ProjectDetail() {
       <Header transparent />
 
       {/* Hero pantalla completa */}
-      <section className="relative h-screen w-full overflow-hidden">
+      <section className="relative h-[100svh] min-h-[520px] w-full overflow-hidden">
         <img
           src={project.image}
           alt={project.title}

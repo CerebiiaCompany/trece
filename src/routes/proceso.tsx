@@ -73,7 +73,7 @@ function Proceso() {
         <div className="space-y-24 md:space-y-32">
           {STEPS.map((s, i) => (
             <Reveal key={s.n} delay={i * 50}>
-              <div className="grid gap-8 border-t border-line pt-10 md:grid-cols-12 md:gap-16 md:pt-14">
+              <div className="grid gap-8 border-t border-line pt-10 md:grid-cols-12 md:gap-8 lg:gap-16 md:pt-14">
                 <div className="md:col-span-4">
                   <div className="font-display text-8xl leading-none md:text-9xl">{s.n}</div>
                 </div>

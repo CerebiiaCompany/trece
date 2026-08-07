@@ -99,7 +99,7 @@ function Servicios() {
           {SERVICES.map((s, i) => (
             <div
               key={s.n}
-              className={`grid gap-10 md:grid-cols-12 md:gap-16 ${
+              className={`grid gap-10 md:grid-cols-12 md:gap-8 lg:gap-16 ${
                 i % 2 === 1 ? "md:[&>*:first-child]:order-2" : ""
               }`}
             >

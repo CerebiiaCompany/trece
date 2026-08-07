@@ -90,7 +90,7 @@ function Index() {
       <Header transparent />
 
       {/* HERO */}
-      <section className="relative h-screen w-full overflow-hidden">
+      <section className="relative h-[100svh] min-h-[560px] w-full overflow-hidden">
         <img
           src={heroImg}
           alt="Proyecto arquitectónico realizado por TRECE"
@@ -136,14 +136,14 @@ function Index() {
           </div>
         </div>
 
-        <div className="absolute bottom-8 left-1/2 z-10 -translate-x-1/2 text-[10px] uppercase tracking-[0.32em] text-ivory/70 animate-pulse">
+        <div className="hidden md:block absolute bottom-8 left-1/2 z-10 -translate-x-1/2 text-[10px] uppercase tracking-[0.32em] text-ivory/70 animate-pulse">
           Scroll
         </div>
       </section>
 
       {/* SOBRE TRECE */}
       <section id="nosotros" className="mx-auto max-w-[1600px] px-6 py-28 md:px-10 md:py-40">
-        <div className="grid gap-14 md:grid-cols-12 md:gap-20">
+        <div className="grid gap-14 md:grid-cols-12 md:gap-10 lg:gap-20">
           <Reveal className="md:col-span-6" slow>
             <div className="image-hover aspect-[4/5] overflow-hidden bg-stone">
               <img
@@ -229,7 +229,7 @@ function Index() {
             {SERVICES.map((s, i) => (
               <div
                 key={s.n}
-                className={`grid gap-10 md:grid-cols-12 md:gap-16 ${
+                className={`grid gap-10 md:grid-cols-12 md:gap-8 lg:gap-16 ${
                   i % 2 === 1 ? "md:[&>*:first-child]:order-2" : ""
                 }`}
               >

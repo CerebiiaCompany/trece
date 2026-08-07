@@ -41,7 +41,7 @@ export function Header({ transparent = false }: { transparent?: boolean }) {
     >
       <div className="mx-auto grid max-w-[1600px] grid-cols-[1fr_auto_1fr] items-center gap-8 px-6 py-4 md:px-10 md:py-5">
         {/* Left nav */}
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav className="hidden items-center gap-8 lg:flex">
           {NAV_LEFT.map((item) => (
             <Link
               key={item.to}
@@ -69,7 +69,7 @@ export function Header({ transparent = false }: { transparent?: boolean }) {
         </Link>
 
         {/* Right nav */}
-        <nav className="hidden items-center justify-end gap-8 md:flex">
+        <nav className="hidden items-center justify-end gap-8 lg:flex">
           {NAV_RIGHT.map((item) => (
             <Link
               key={item.to}
@@ -95,7 +95,7 @@ export function Header({ transparent = false }: { transparent?: boolean }) {
 
         {/* Mobile toggle (right column on mobile) */}
         <button
-          className={`justify-self-end text-[11px] uppercase tracking-[0.22em] md:hidden ${
+          className={`justify-self-end text-[11px] uppercase tracking-[0.22em] lg:hidden ${
             solid ? "text-ink" : "text-ivory"
           }`}
           onClick={() => setOpen((o) => !o)}
@@ -106,7 +106,7 @@ export function Header({ transparent = false }: { transparent?: boolean }) {
       </div>
 
       {open && (
-        <div className="animate-fade-in border-t border-line bg-ivory md:hidden">
+        <div className="animate-fade-in border-t border-line bg-ivory lg:hidden">
           <nav className="flex flex-col gap-4 px-6 py-6">
             {ALL_NAV.map((item) => (
               <Link

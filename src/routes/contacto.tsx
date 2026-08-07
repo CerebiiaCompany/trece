@@ -30,7 +30,7 @@ function Contacto() {
       <Header />
 
       <section className="mx-auto max-w-[1600px] px-6 pt-40 pb-24 md:px-10 md:pt-48 md:pb-32">
-        <div className="grid gap-16 md:grid-cols-12 md:gap-24">
+        <div className="grid gap-16 md:grid-cols-12 md:gap-10 lg:gap-24">
           <div className="md:col-span-6">
             <Reveal>
               <span className="eyebrow">Contacto</span>
