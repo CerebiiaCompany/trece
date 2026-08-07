@@ -348,6 +348,7 @@ export const projectCategory: Record<string, CategorySlug> = {
   "remodelacion-la-primavera": "remodelaciones",
   "remodelacion-la-primavera-02": "remodelaciones",
   "apto-san-luis": "remodelaciones",
+  "apto-colsag": "remodelaciones",
   "centro-vacacional-comfaoriente": "otros",
   "centro-desarrollo-juvenil": "otros",
 };
