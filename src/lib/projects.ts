@@ -19,7 +19,7 @@ export type Project = {
 import p1 from "@/assets/p1-ecohome.jpg";
 import p2 from "@/assets/p2-multifamiliar.jpg";
 
-import p4 from "@/assets/p4-terraza.jpg";
+
 import p5 from "@/assets/p5-vacacional.jpg";
 import p6 from "@/assets/p6-coworking.jpg";
 import p7 from "@/assets/p7-optica.jpg";
@@ -116,21 +116,6 @@ export const projects: Project[] = [
       "Traducir un lenguaje litúrgico tradicional a una expresión contemporánea, generando un espacio de recogimiento con luz cenital controlada y una presencia urbana serena.",
     solution:
       "Volumen blanco de sección basilical simplificada, cruz esculpida en bajorrelieve y vitrales verticales que dibujan la luz sobre el altar a lo largo del día.",
-  },
-  {
-    slug: "terraza-comfanorte",
-    number: "04",
-    title: "Terraza Social Comfanorte",
-    location: "Cúcuta",
-    category: "Espacio Social",
-    client: "JASA Ltda.",
-    year: "2023",
-    tools: ["SketchUp", "Lumion", "AutoCAD"],
-    image: p4,
-    challenge:
-      "Transformar una cubierta subutilizada en un espacio social flexible para eventos corporativos y familiares, resistente al clima cálido de Cúcuta.",
-    solution:
-      "Pérgola en madera laminada con iluminación integrada, mobiliario modular y jardineras perimetrales que suavizan la relación con la ciudad.",
   },
   {
     slug: "centro-vacacional-comfaoriente",
@@ -344,7 +329,7 @@ export const projectCategory: Record<string, CategorySlug> = {
   "casa-cural-torcoroma": "iglesias",
   "coworking-comfanorte": "comercial",
   "optica-zugo": "comercial",
-  "terraza-comfanorte": "remodelaciones",
+  
   "remodelacion-la-primavera": "remodelaciones",
   "remodelacion-la-primavera-02": "remodelaciones",
   "apto-san-luis": "remodelaciones",
