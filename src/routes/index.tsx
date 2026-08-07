@@ -90,7 +90,7 @@ function Index() {
       <Header transparent />
 
       {/* HERO */}
-      <section className="relative h-screen w-full overflow-hidden">
+      <section className="relative h-[100svh] min-h-[560px] w-full overflow-hidden">
         <img
           src={heroImg}
           alt="Proyecto arquitectónico realizado por TRECE"
