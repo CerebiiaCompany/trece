@@ -143,7 +143,7 @@ function Index() {
 
       {/* SOBRE TRECE */}
       <section id="nosotros" className="mx-auto max-w-[1600px] px-6 py-28 md:px-10 md:py-40">
-        <div className="grid gap-14 md:grid-cols-12 md:gap-20">
+        <div className="grid gap-14 md:grid-cols-12 md:gap-10 lg:gap-20">
           <Reveal className="md:col-span-6" slow>
             <div className="image-hover aspect-[4/5] overflow-hidden bg-stone">
               <img
@@ -229,7 +229,7 @@ function Index() {
             {SERVICES.map((s, i) => (
               <div
                 key={s.n}
-                className={`grid gap-10 md:grid-cols-12 md:gap-16 ${
+                className={`grid gap-10 md:grid-cols-12 md:gap-8 lg:gap-16 ${
                   i % 2 === 1 ? "md:[&>*:first-child]:order-2" : ""
                 }`}
               >
