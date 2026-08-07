@@ -9,6 +9,8 @@ export type Project = {
   tools: string[];
   image: string;
   gallery?: string[];
+  before?: string[];
+  after?: string[];
   pdf?: string;
   challenge: string;
   solution: string;
@@ -41,6 +43,14 @@ import tor1 from "@/assets/torcoroma-1.jpg.asset.json";
 import tor4 from "@/assets/torcoroma-4.jpg.asset.json";
 import tor7 from "@/assets/torcoroma-7-2.jpg.asset.json";
 import tor17 from "@/assets/torcoroma-17.jpg.asset.json";
+import primAntes1 from "@/assets/primavera-antes-1.jpg.asset.json";
+import primAntes2 from "@/assets/primavera-antes-2.jpg.asset.json";
+import primAntes3 from "@/assets/primavera-antes-3.jpg.asset.json";
+import primDespues1 from "@/assets/primavera-despues-1.jpg.asset.json";
+import primDespues2 from "@/assets/primavera-despues-2.jpg.asset.json";
+import primDespues3 from "@/assets/primavera-despues-3.jpg.asset.json";
+import primDespues4 from "@/assets/primavera-despues-4.jpg.asset.json";
+import primDespues5 from "@/assets/primavera-despues-5.jpg.asset.json";
 
 
 export const projects: Project[] = [
