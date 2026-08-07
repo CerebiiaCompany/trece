@@ -54,6 +54,16 @@ import primDespues5 from "@/assets/primavera-despues-5.jpg.asset.json";
 import prim2_1 from "@/assets/primavera2-1.jpg.asset.json";
 import prim2_2 from "@/assets/primavera2-2.jpg.asset.json";
 import prim2_3 from "@/assets/primavera2-3.jpg.asset.json";
+import slAntes1 from "@/assets/sanluis-antes-1.jpg.asset.json";
+import slAntes2 from "@/assets/sanluis-antes-2.jpg.asset.json";
+import slAntes3 from "@/assets/sanluis-antes-3.jpg.asset.json";
+import slAntes4 from "@/assets/sanluis-antes-4.jpg.asset.json";
+import slDespues1 from "@/assets/sanluis-despues-1.jpg.asset.json";
+import slDespues2 from "@/assets/sanluis-despues-2.jpg.asset.json";
+import slDespues3 from "@/assets/sanluis-despues-3.jpg.asset.json";
+import slDespues4 from "@/assets/sanluis-despues-4.jpg.asset.json";
+import slDespues5 from "@/assets/sanluis-despues-5.jpg.asset.json";
+import slDespues6 from "@/assets/sanluis-despues-6.jpg.asset.json";
 
 
 export const projects: Project[] = [
@@ -262,6 +272,29 @@ export const projects: Project[] = [
     solution:
       "Se diseñó un recibidor con consola flotante en madera maciza, espejo curvo y celosía vertical iluminada con luz puntual; y se abrió la cocina hacia el comedor con un marco en listones de madera, barra en granito e iluminación lineal y colgante que unifica el conjunto.",
   },
+  {
+    slug: "apto-san-luis",
+    number: "15",
+    title: "Apto San Luis",
+    location: "San Luis, Cúcuta",
+    category: "Remodelación Integral",
+    year: "2026",
+    tools: ["AutoCAD", "SketchUp", "Dirección de obra"],
+    image: slDespues1.url,
+    before: [slAntes1.url, slAntes2.url, slAntes3.url, slAntes4.url],
+    after: [
+      slDespues1.url,
+      slDespues2.url,
+      slDespues3.url,
+      slDespues4.url,
+      slDespues5.url,
+      slDespues6.url,
+    ],
+    challenge:
+      "Renovar por completo un apartamento con espacios compartimentados, acabados desgastados y una cocina cerrada con enchapes deteriorados, humedades y una zona de ropas sin resolver, manteniendo la estructura existente.",
+    solution:
+      "Se abrió la cocina hacia la zona social con una barra en madera y mueble en gris mate, se renovaron pisos en porcelanato tipo mármol, se rehízo la zona de ropas con lavadero en granito y enchape de gran formato, y se dotaron las habitaciones de clósets en madera con iluminación y carpintería nuevas.",
+  },
 ];
 
 
@@ -284,6 +317,7 @@ export const projectCategory: Record<string, CategorySlug> = {
   "terraza-comfanorte": "remodelaciones",
   "remodelacion-la-primavera": "remodelaciones",
   "remodelacion-la-primavera-02": "remodelaciones",
+  "apto-san-luis": "remodelaciones",
   "centro-vacacional-comfaoriente": "otros",
   "centro-desarrollo-juvenil": "otros",
 };
