@@ -157,6 +157,54 @@ function ProjectDetail() {
         </div>
       </section>
 
+      {/* Antes y después */}
+      {project.before?.length || project.after?.length ? (
+        <section className="mx-auto max-w-[1600px] px-6 py-24 md:px-10 md:py-32">
+          <Reveal>
+            <span className="eyebrow">Antes y después</span>
+            <h2 className="display-md mt-6">La transformación.</h2>
+          </Reveal>
+
+          {project.before?.length ? (
+            <div className="mt-16">
+              <div className="eyebrow text-mute">Antes</div>
+              <div className="mt-6 grid gap-6 md:grid-cols-3">
+                {project.before.map((src: string, i: number) => (
+                  <div key={src} className="image-hover aspect-[4/3] overflow-hidden bg-stone">
+                    <img
+                      src={src}
+                      alt={`${project.title} — antes ${i + 1}`}
+                      className="h-full w-full object-cover grayscale"
+                      loading="eager"
+                      decoding="async"
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+          ) : null}
+
+          {project.after?.length ? (
+            <div className="mt-16">
+              <div className="eyebrow">Después</div>
+              <div className="mt-6 grid gap-6 md:grid-cols-2">
+                {project.after.map((src: string, i: number) => (
+                  <div key={src} className="image-hover aspect-[4/3] overflow-hidden bg-stone">
+                    <img
+                      src={src}
+                      alt={`${project.title} — después ${i + 1}`}
+                      className="h-full w-full object-cover"
+                      loading="eager"
+                      decoding="async"
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+          ) : null}
+        </section>
+      ) : null}
+
       {/* Galería masonry */}
       {project.gallery?.length ? (
         <section className="mx-auto max-w-[1600px] px-6 py-24 md:px-10 md:py-32">

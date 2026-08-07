@@ -9,6 +9,8 @@ export type Project = {
   tools: string[];
   image: string;
   gallery?: string[];
+  before?: string[];
+  after?: string[];
   pdf?: string;
   challenge: string;
   solution: string;
@@ -41,6 +43,14 @@ import tor1 from "@/assets/torcoroma-1.jpg.asset.json";
 import tor4 from "@/assets/torcoroma-4.jpg.asset.json";
 import tor7 from "@/assets/torcoroma-7-2.jpg.asset.json";
 import tor17 from "@/assets/torcoroma-17.jpg.asset.json";
+import primAntes1 from "@/assets/primavera-antes-1.jpg.asset.json";
+import primAntes2 from "@/assets/primavera-antes-2.jpg.asset.json";
+import primAntes3 from "@/assets/primavera-antes-3.jpg.asset.json";
+import primDespues1 from "@/assets/primavera-despues-1.jpg.asset.json";
+import primDespues2 from "@/assets/primavera-despues-2.jpg.asset.json";
+import primDespues3 from "@/assets/primavera-despues-3.jpg.asset.json";
+import primDespues4 from "@/assets/primavera-despues-4.jpg.asset.json";
+import primDespues5 from "@/assets/primavera-despues-5.jpg.asset.json";
 
 
 export const projects: Project[] = [
@@ -218,6 +228,22 @@ export const projects: Project[] = [
     solution:
       "Una planta organizada en torno a un patio central longitudinal con pérgola metálica y jardineras, que separa el área pública del despacho de la zona íntima de habitaciones; fachada urbana en ladrillo gris, celosías de madera y voladizo continuo que protege el acceso.",
   },
+  {
+    slug: "remodelacion-la-primavera",
+    number: "13",
+    title: "Remodelación Casa La Primavera",
+    location: "La Primavera, Cúcuta",
+    category: "Remodelación Integral",
+    year: "2025",
+    tools: ["AutoCAD", "SketchUp", "Dirección de obra"],
+    image: primDespues1.url,
+    before: [primAntes1.url, primAntes2.url, primAntes3.url],
+    after: [primDespues1.url, primDespues2.url, primDespues3.url, primDespues4.url, primDespues5.url],
+    challenge:
+      "Actualizar una vivienda existente con espacios compartimentados, humedades, cubiertas deterioradas y una fachada sin identidad, sin alterar la estructura original ni exceder el presupuesto familiar.",
+    solution:
+      "Se liberó la planta social para integrar sala, comedor y cocina; se construyó una cocina en isla con mesón en mármol, carpintería en madera y blanco alto brillo; se renovaron pisos, iluminación y patio interior con jardinera y celosía; y se rediseñó la fachada con volúmenes limpios, enchape en piedra e iluminación arquitectónica.",
+  },
 ];
 
 
@@ -237,6 +263,7 @@ export const projectCategory: Record<string, CategorySlug> = {
   "coworking-comfanorte": "comercial",
   "optica-zugo": "comercial",
   "terraza-comfanorte": "remodelaciones",
+  "remodelacion-la-primavera": "remodelaciones",
   "centro-vacacional-comfaoriente": "otros",
   "centro-desarrollo-juvenil": "otros",
 };
