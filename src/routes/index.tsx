@@ -136,7 +136,7 @@ function Index() {
           </div>
         </div>
 
-        <div className="absolute bottom-8 left-1/2 z-10 -translate-x-1/2 text-[10px] uppercase tracking-[0.32em] text-ivory/70 animate-pulse">
+        <div className="hidden md:block absolute bottom-8 left-1/2 z-10 -translate-x-1/2 text-[10px] uppercase tracking-[0.32em] text-ivory/70 animate-pulse">
           Scroll
         </div>
       </section>
