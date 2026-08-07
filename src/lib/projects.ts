@@ -51,6 +51,9 @@ import primDespues2 from "@/assets/primavera-despues-2.jpg.asset.json";
 import primDespues3 from "@/assets/primavera-despues-3.jpg.asset.json";
 import primDespues4 from "@/assets/primavera-despues-4.jpg.asset.json";
 import primDespues5 from "@/assets/primavera-despues-5.jpg.asset.json";
+import prim2_1 from "@/assets/primavera2-1.jpg.asset.json";
+import prim2_2 from "@/assets/primavera2-2.jpg.asset.json";
+import prim2_3 from "@/assets/primavera2-3.jpg.asset.json";
 
 
 export const projects: Project[] = [
@@ -244,7 +247,23 @@ export const projects: Project[] = [
     solution:
       "Se liberó la planta social para integrar sala, comedor y cocina; se construyó una cocina en isla con mesón en mármol, carpintería en madera y blanco alto brillo; se renovaron pisos, iluminación y patio interior con jardinera y celosía; y se rediseñó la fachada con volúmenes limpios, enchape en piedra e iluminación arquitectónica.",
   },
+  {
+    slug: "remodelacion-la-primavera-02",
+    number: "14",
+    title: "Remodelación La Primavera 02",
+    location: "La Primavera, Cúcuta",
+    category: "Remodelación Integral",
+    year: "2026",
+    tools: ["AutoCAD", "SketchUp", "Dirección de obra"],
+    image: prim2_1.url,
+    after: [prim2_1.url, prim2_2.url, prim2_3.url],
+    challenge:
+      "Renovar los espacios sociales de un apartamento existente —recibidor, cocina y comedor— aportando calidez y orden visual sin intervenir la estructura ni los pisos originales en piedra.",
+    solution:
+      "Se diseñó un recibidor con consola flotante en madera maciza, espejo curvo y celosía vertical iluminada con luz puntual; y se abrió la cocina hacia el comedor con un marco en listones de madera, barra en granito e iluminación lineal y colgante que unifica el conjunto.",
+  },
 ];
+
 
 
 
