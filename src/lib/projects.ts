@@ -283,6 +283,7 @@ export const projectCategory: Record<string, CategorySlug> = {
   "optica-zugo": "comercial",
   "terraza-comfanorte": "remodelaciones",
   "remodelacion-la-primavera": "remodelaciones",
+  "remodelacion-la-primavera-02": "remodelaciones",
   "centro-vacacional-comfaoriente": "otros",
   "centro-desarrollo-juvenil": "otros",
 };
