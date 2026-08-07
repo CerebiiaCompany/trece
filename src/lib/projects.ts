@@ -295,6 +295,29 @@ export const projects: Project[] = [
     solution:
       "Se abrió la cocina hacia la zona social con una barra en madera y mueble en gris mate, se renovaron pisos en porcelanato tipo mármol, se rehízo la zona de ropas con lavadero en granito y enchape de gran formato, y se dotaron las habitaciones de clósets en madera con iluminación y carpintería nuevas.",
   },
+  {
+    slug: "apto-colsag",
+    number: "16",
+    title: "Apto Colsag",
+    location: "Colsag, Cúcuta",
+    category: "Remodelación Integral",
+    year: "2026",
+    tools: ["AutoCAD", "SketchUp", "Dirección de obra"],
+    image: colsag1.url,
+    after: [
+      colsag1.url,
+      colsag2.url,
+      colsag3.url,
+      colsag4.url,
+      colsag5.url,
+      colsag6.url,
+      colsag7.url,
+    ],
+    challenge:
+      "Reorganizar un apartamento familiar con zonas sociales fragmentadas y una cocina cerrada, logrando continuidad visual entre sala, comedor y cocina sin modificar la estructura ni los pisos en granito existentes.",
+    solution:
+      "Se abrió la cocina hacia la zona social con una barra en mármol y celosías verticales en madera que filtran la vista sin cerrar; se diseñaron un recibidor con banca flotante, espejo e iluminación lineal, y mobiliario a medida en madera clara y blanco mate que unifica todos los ambientes.",
+  },
 ];
 
 
