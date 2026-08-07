@@ -64,6 +64,13 @@ import slDespues3 from "@/assets/sanluis-despues-3.jpg.asset.json";
 import slDespues4 from "@/assets/sanluis-despues-4.jpg.asset.json";
 import slDespues5 from "@/assets/sanluis-despues-5.jpg.asset.json";
 import slDespues6 from "@/assets/sanluis-despues-6.jpg.asset.json";
+import colsag1 from "@/assets/colsag-1.jpg.asset.json";
+import colsag2 from "@/assets/colsag-2.jpg.asset.json";
+import colsag3 from "@/assets/colsag-3.jpg.asset.json";
+import colsag4 from "@/assets/colsag-4.jpg.asset.json";
+import colsag5 from "@/assets/colsag-5.jpg.asset.json";
+import colsag6 from "@/assets/colsag-6.jpg.asset.json";
+import colsag7 from "@/assets/colsag-7.jpg.asset.json";
 
 
 export const projects: Project[] = [
@@ -295,6 +302,29 @@ export const projects: Project[] = [
     solution:
       "Se abrió la cocina hacia la zona social con una barra en madera y mueble en gris mate, se renovaron pisos en porcelanato tipo mármol, se rehízo la zona de ropas con lavadero en granito y enchape de gran formato, y se dotaron las habitaciones de clósets en madera con iluminación y carpintería nuevas.",
   },
+  {
+    slug: "apto-colsag",
+    number: "16",
+    title: "Apto Colsag",
+    location: "Colsag, Cúcuta",
+    category: "Remodelación Integral",
+    year: "2026",
+    tools: ["AutoCAD", "SketchUp", "Dirección de obra"],
+    image: colsag1.url,
+    after: [
+      colsag1.url,
+      colsag2.url,
+      colsag3.url,
+      colsag4.url,
+      colsag5.url,
+      colsag6.url,
+      colsag7.url,
+    ],
+    challenge:
+      "Reorganizar un apartamento familiar con zonas sociales fragmentadas y una cocina cerrada, logrando continuidad visual entre sala, comedor y cocina sin modificar la estructura ni los pisos en granito existentes.",
+    solution:
+      "Se abrió la cocina hacia la zona social con una barra en mármol y celosías verticales en madera que filtran la vista sin cerrar; se diseñaron un recibidor con banca flotante, espejo e iluminación lineal, y mobiliario a medida en madera clara y blanco mate que unifica todos los ambientes.",
+  },
 ];
 
 
@@ -318,6 +348,7 @@ export const projectCategory: Record<string, CategorySlug> = {
   "remodelacion-la-primavera": "remodelaciones",
   "remodelacion-la-primavera-02": "remodelaciones",
   "apto-san-luis": "remodelaciones",
+  "apto-colsag": "remodelaciones",
   "centro-vacacional-comfaoriente": "otros",
   "centro-desarrollo-juvenil": "otros",
 };
