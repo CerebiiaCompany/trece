@@ -329,7 +329,7 @@ export const projectCategory: Record<string, CategorySlug> = {
   "casa-cural-torcoroma": "iglesias",
   "coworking-comfanorte": "comercial",
   "optica-zugo": "comercial",
-  "terraza-comfanorte": "remodelaciones",
+  
   "remodelacion-la-primavera": "remodelaciones",
   "remodelacion-la-primavera-02": "remodelaciones",
   "apto-san-luis": "remodelaciones",
