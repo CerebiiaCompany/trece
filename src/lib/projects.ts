@@ -25,53 +25,53 @@ import p6 from "@/assets/p6-coworking.jpg";
 import p7 from "@/assets/p7-optica.jpg";
 import p8 from "@/assets/p8-torre.jpg";
 import p9 from "@/assets/p9-juvenil.jpg";
-import santaRitaHero from "@/assets/santa-rita-fachada.png.asset.json";
-import santaRitaPdf from "@/assets/santa-rita-de-casia.pdf.asset.json";
-import cobre1 from "@/assets/capilla-cobre-1.jpg.asset.json";
-import cobre2 from "@/assets/capilla-cobre-2.jpg.asset.json";
-import cobre3 from "@/assets/capilla-cobre-3.jpg.asset.json";
-import cobre4 from "@/assets/capilla-cobre-4.jpg.asset.json";
-import cobre5 from "@/assets/capilla-cobre-5.jpg.asset.json";
-import cobre6 from "@/assets/capilla-cobre-6.jpg.asset.json";
-import dn2 from "@/assets/divino-nino-2.jpg.asset.json";
-import dn6 from "@/assets/divino-nino-6.jpg.asset.json";
-import dn7 from "@/assets/divino-nino-7.jpg.asset.json";
-import dn8 from "@/assets/divino-nino-8.jpg.asset.json";
-import dn11 from "@/assets/divino-nino-11.jpg.asset.json";
-import dn12 from "@/assets/divino-nino-12.jpg.asset.json";
-import tor1 from "@/assets/torcoroma-1.jpg.asset.json";
-import tor4 from "@/assets/torcoroma-4.jpg.asset.json";
-import tor7 from "@/assets/torcoroma-7-2.jpg.asset.json";
-import tor17 from "@/assets/torcoroma-17.jpg.asset.json";
-import primAntes1 from "@/assets/primavera-antes-1.jpg.asset.json";
-import primAntes2 from "@/assets/primavera-antes-2.jpg.asset.json";
-import primAntes3 from "@/assets/primavera-antes-3.jpg.asset.json";
-import primDespues1 from "@/assets/primavera-despues-1.jpg.asset.json";
-import primDespues2 from "@/assets/primavera-despues-2.jpg.asset.json";
-import primDespues3 from "@/assets/primavera-despues-3.jpg.asset.json";
-import primDespues4 from "@/assets/primavera-despues-4.jpg.asset.json";
-import primDespues5 from "@/assets/primavera-despues-5.jpg.asset.json";
-import prim2_1 from "@/assets/primavera2-1.jpg.asset.json";
-import prim2_2 from "@/assets/primavera2-2.jpg.asset.json";
-import prim2_3 from "@/assets/primavera2-3.jpg.asset.json";
-import slAntes1 from "@/assets/sanluis-antes-1.jpg.asset.json";
-import slAntes2 from "@/assets/sanluis-antes-2.jpg.asset.json";
-import slAntes3 from "@/assets/sanluis-antes-3.jpg.asset.json";
-import slAntes4 from "@/assets/sanluis-antes-4.jpg.asset.json";
-import slDespues1 from "@/assets/sanluis-despues-1.jpg.asset.json";
-import slDespues2 from "@/assets/sanluis-despues-2.jpg.asset.json";
-import slDespues3 from "@/assets/sanluis-despues-3.jpg.asset.json";
-import slDespues4 from "@/assets/sanluis-despues-4.jpg.asset.json";
-import slDespues5 from "@/assets/sanluis-despues-5.jpg.asset.json";
-import slDespues6 from "@/assets/sanluis-despues-6.jpg.asset.json";
-import colsag1 from "@/assets/colsag-1.jpg.asset.json";
-import colsag2 from "@/assets/colsag-2.jpg.asset.json";
-import colsag3 from "@/assets/colsag-3.jpg.asset.json";
-import colsag4 from "@/assets/colsag-4.jpg.asset.json";
-import colsag5 from "@/assets/colsag-5.jpg.asset.json";
-import colsag6 from "@/assets/colsag-6.jpg.asset.json";
-import colsag7 from "@/assets/colsag-7.jpg.asset.json";
+import santaRitaHero from "@/assets/santa-rita-fachada.png";
+import cobre1 from "@/assets/capilla-cobre-1.jpg";
+import cobre2 from "@/assets/capilla-cobre-2.jpg";
+import cobre3 from "@/assets/capilla-cobre-3.jpg";
+import cobre4 from "@/assets/capilla-cobre-4.jpg";
+import cobre5 from "@/assets/capilla-cobre-5.jpg";
+import cobre6 from "@/assets/capilla-cobre-6.jpg";
+import dn2 from "@/assets/divino-nino-2.jpg";
+import dn6 from "@/assets/divino-nino-6.jpg";
+import dn7 from "@/assets/divino-nino-7.jpg";
+import dn8 from "@/assets/divino-nino-8.jpg";
+import dn11 from "@/assets/divino-nino-11.jpg";
+import dn12 from "@/assets/divino-nino-12.jpg";
+import tor1 from "@/assets/torcoroma-1.jpg";
+import tor4 from "@/assets/torcoroma-4.jpg";
+import tor7 from "@/assets/torcoroma-7-2.jpg";
+import tor17 from "@/assets/torcoroma-17.jpg";
+import primAntes1 from "@/assets/primavera-antes-1.jpg";
+import primAntes2 from "@/assets/primavera-antes-2.jpg";
+import primAntes3 from "@/assets/primavera-antes-3.jpg";
+import primDespues1 from "@/assets/primavera-despues-1.jpg";
+import primDespues2 from "@/assets/primavera-despues-2.jpg";
+import primDespues3 from "@/assets/primavera-despues-3.jpg";
+import primDespues4 from "@/assets/primavera-despues-4.jpg";
+import primDespues5 from "@/assets/primavera-despues-5.jpg";
+import prim2_1 from "@/assets/primavera2-1.jpg";
+import prim2_2 from "@/assets/primavera2-2.jpg";
+import prim2_3 from "@/assets/primavera2-3.jpg";
+import slAntes1 from "@/assets/sanluis-antes-1.jpg";
+import slAntes2 from "@/assets/sanluis-antes-2.jpg";
+import slAntes3 from "@/assets/sanluis-antes-3.jpg";
+import slAntes4 from "@/assets/sanluis-antes-4.jpg";
+import slDespues1 from "@/assets/sanluis-despues-1.jpg";
+import slDespues2 from "@/assets/sanluis-despues-2.jpg";
+import slDespues3 from "@/assets/sanluis-despues-3.jpg";
+import slDespues4 from "@/assets/sanluis-despues-4.jpg";
+import slDespues5 from "@/assets/sanluis-despues-5.jpg";
+import slDespues6 from "@/assets/sanluis-despues-6.jpg";
+import colsag1 from "@/assets/colsag-1.jpg";
+import colsag2 from "@/assets/colsag-2.jpg";
+import colsag3 from "@/assets/colsag-3.jpg";
+import colsag4 from "@/assets/colsag-4.jpg";
+import colsag5 from "@/assets/colsag-5.jpg";
+import colsag6 from "@/assets/colsag-6.jpg";
+import colsag7 from "@/assets/colsag-7.jpg";
 
+const santaRitaPdf = "/santa-rita-de-casia.pdf";
 
 export const projects: Project[] = [
   {
@@ -110,8 +110,8 @@ export const projects: Project[] = [
     category: "Arquitectura Religiosa",
     year: "2022",
     tools: ["SketchUp", "V-Ray", "Photoshop"],
-    image: santaRitaHero.url,
-    pdf: santaRitaPdf.url,
+    image: santaRitaHero,
+    pdf: santaRitaPdf,
     challenge:
       "Traducir un lenguaje litúrgico tradicional a una expresión contemporánea, generando un espacio de recogimiento con luz cenital controlada y una presencia urbana serena.",
     solution:
@@ -196,8 +196,8 @@ export const projects: Project[] = [
     category: "Arquitectura Religiosa",
     year: "2024",
     tools: ["Revit", "SketchUp", "V-Ray", "Photoshop"],
-    image: cobre4.url,
-    gallery: [cobre4.url, cobre1.url, cobre2.url, cobre5.url, cobre3.url, cobre6.url],
+    image: cobre4,
+    gallery: [cobre4, cobre1, cobre2, cobre5, cobre3, cobre6],
     challenge:
       "Resolver una capilla de escala barrial en un lote urbano estrecho, capaz de albergar la asamblea con dignidad litúrgica, buena acústica y ventilación natural, y a la vez ofrecer una imagen reconocible desde la calle.",
     solution:
@@ -211,8 +211,8 @@ export const projects: Project[] = [
     category: "Arquitectura Religiosa",
     year: "2024",
     tools: ["Revit", "SketchUp", "V-Ray", "Photoshop"],
-    image: dn2.url,
-    gallery: [dn2.url, dn12.url, dn6.url, dn8.url, dn7.url, dn11.url],
+    image: dn2,
+    gallery: [dn2, dn12, dn6, dn8, dn7, dn11],
     challenge:
       "Proyectar una capilla y su despacho parroquial en un lote alargado con fuerte pendiente, resolviendo accesibilidad, ventilación e iluminación natural sin renunciar a una imagen urbana sobria y reconocible en el barrio.",
     solution:
@@ -226,8 +226,8 @@ export const projects: Project[] = [
     category: "Arquitectura Religiosa",
     year: "2024",
     tools: ["Revit", "SketchUp", "V-Ray", "Photoshop"],
-    image: tor1.url,
-    gallery: [tor1.url, tor4.url, tor7.url, tor17.url],
+    image: tor1,
+    gallery: [tor1, tor4, tor7, tor17],
     challenge:
       "Resolver en un lote alargado la casa cural y el despacho parroquial, integrando atención al público, áreas administrativas y la vivienda del sacerdote con privacidad, ventilación cruzada e iluminación natural en todo el recorrido.",
     solution:
@@ -241,9 +241,9 @@ export const projects: Project[] = [
     category: "Remodelación Integral",
     year: "2025",
     tools: ["AutoCAD", "SketchUp", "Dirección de obra"],
-    image: primDespues1.url,
-    before: [primAntes1.url, primAntes2.url, primAntes3.url],
-    after: [primDespues1.url, primDespues2.url, primDespues3.url, primDespues4.url, primDespues5.url],
+    image: primDespues1,
+    before: [primAntes1, primAntes2, primAntes3],
+    after: [primDespues1, primDespues2, primDespues3, primDespues4, primDespues5],
     challenge:
       "Actualizar una vivienda existente con espacios compartimentados, humedades, cubiertas deterioradas y una fachada sin identidad, sin alterar la estructura original ni exceder el presupuesto familiar.",
     solution:
@@ -257,8 +257,8 @@ export const projects: Project[] = [
     category: "Remodelación Integral",
     year: "2026",
     tools: ["AutoCAD", "SketchUp", "Dirección de obra"],
-    image: prim2_1.url,
-    after: [prim2_1.url, prim2_2.url, prim2_3.url],
+    image: prim2_1,
+    after: [prim2_1, prim2_2, prim2_3],
     challenge:
       "Renovar los espacios sociales de un apartamento existente —recibidor, cocina y comedor— aportando calidez y orden visual sin intervenir la estructura ni los pisos originales en piedra.",
     solution:
@@ -272,15 +272,15 @@ export const projects: Project[] = [
     category: "Remodelación Integral",
     year: "2026",
     tools: ["AutoCAD", "SketchUp", "Dirección de obra"],
-    image: slDespues1.url,
-    before: [slAntes1.url, slAntes2.url, slAntes3.url, slAntes4.url],
+    image: slDespues1,
+    before: [slAntes1, slAntes2, slAntes3, slAntes4],
     after: [
-      slDespues1.url,
-      slDespues2.url,
-      slDespues3.url,
-      slDespues4.url,
-      slDespues5.url,
-      slDespues6.url,
+      slDespues1,
+      slDespues2,
+      slDespues3,
+      slDespues4,
+      slDespues5,
+      slDespues6,
     ],
     challenge:
       "Renovar por completo un apartamento con espacios compartimentados, acabados desgastados y una cocina cerrada con enchapes deteriorados, humedades y una zona de ropas sin resolver, manteniendo la estructura existente.",
@@ -295,15 +295,15 @@ export const projects: Project[] = [
     category: "Remodelación Integral",
     year: "2026",
     tools: ["AutoCAD", "SketchUp", "Dirección de obra"],
-    image: colsag1.url,
+    image: colsag1,
     after: [
-      colsag1.url,
-      colsag2.url,
-      colsag3.url,
-      colsag4.url,
-      colsag5.url,
-      colsag6.url,
-      colsag7.url,
+      colsag1,
+      colsag2,
+      colsag3,
+      colsag4,
+      colsag5,
+      colsag6,
+      colsag7,
     ],
     challenge:
       "Reorganizar un apartamento familiar con zonas sociales fragmentadas y una cocina cerrada, logrando continuidad visual entre sala, comedor y cocina sin modificar la estructura ni los pisos en granito existentes.",
