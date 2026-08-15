@@ -51,14 +51,19 @@ function Contacto() {
               <div className="mt-16 space-y-10 border-t border-line pt-10">
                 <div>
                   <div className="eyebrow">Correo</div>
-                  <a href="mailto:hola@trecearq.co" className="mt-3 block font-display text-3xl link-hover">
-                    hola@trecearq.co
+                  <a href="mailto:treceac.co@gmail.com" className="mt-3 block font-display text-3xl link-hover break-all">
+                    treceac.co@gmail.com
                   </a>
                 </div>
                 <div>
-                  <div className="eyebrow">Teléfono</div>
-                  <a href="tel:+573000000000" className="mt-3 block font-display text-3xl link-hover">
-                    +57 300 000 0000
+                  <div className="eyebrow">Instagram</div>
+                  <a
+                    href="https://www.instagram.com/trece_arquitectura"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-3 block font-display text-3xl link-hover"
+                  >
+                    @trece_arquitectura
                   </a>
                 </div>
                 <div>

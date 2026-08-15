@@ -4,9 +4,38 @@ import { Footer } from "@/components/Footer";
 import { Reveal } from "@/components/Reveal";
 import teamImgAsset from "@/assets/team.jpg.asset.json";
 import ctaImgAsset from "@/assets/cta.jpg.asset.json";
+import julianaAsset from "@/assets/juliana-triana.png.asset.json";
+import juanAsset from "@/assets/juan-penaloza.png.asset.json";
 
 const teamImg = teamImgAsset.url;
 const ctaImg = ctaImgAsset.url;
+
+const founders = [
+  {
+    img: julianaAsset.url,
+    name: "Juliana Triana",
+    role: "Arquitecta · CEO de Diseño",
+    body: [
+      "Arquitecta y cofundadora de TRECE, donde lidera el área de diseño y desarrollo conceptual de los proyectos. Su enfoque combina creatividad, funcionalidad y visión estratégica para transformar ideas en espacios que responden a las necesidades de cada cliente.",
+      "Desde la concepción inicial hasta la definición de materiales, detalles y experiencia espacial, Juliana acompaña cada proyecto buscando un equilibrio entre diseño, identidad, funcionalidad y viabilidad constructiva.",
+      "En TRECE, su liderazgo se centra en convertir cada proyecto en una propuesta con propósito, cuidando tanto la estética como los aspectos técnicos que permiten llevar las ideas a la realidad.",
+    ],
+    quote:
+      "Diseñar es encontrar el equilibrio entre lo que imaginamos y lo que realmente podemos construir.",
+  },
+  {
+    img: juanAsset.url,
+    name: "Juan Peñaloza",
+    role: "Arquitecto · CEO de Gestión de Proyectos",
+    body: [
+      "Arquitecto y cofundador de TRECE, donde lidera la gestión y dirección de proyectos, conectando el diseño con una ejecución organizada, eficiente y técnicamente sólida.",
+      "Cuenta con experiencia en dirección y residencia de obra, supervisión, programación, control de presupuestos, manejo de personal, materiales y coordinación de equipos, participando en proyectos de remodelación, adecuación, construcción y diseño arquitectónico. Su trayectoria incluye proyectos institucionales, comerciales, residenciales y de infraestructura.",
+      "En TRECE, Juan se enfoca en convertir las propuestas de diseño en proyectos ejecutables, haciendo seguimiento a cada etapa para que los objetivos de tiempo, presupuesto, calidad y alcance se mantengan alineados.",
+    ],
+    quote:
+      "Su experiencia en obra y su visión integral permiten que en TRECE las ideas no solo se diseñen, sino que se construyan de manera eficiente y responsable.",
+  },
+];
 
 export const Route = createFileRoute("/nosotros")({
   component: Nosotros,
@@ -88,6 +117,51 @@ function Nosotros() {
                   <p className="mt-4 text-sm leading-relaxed text-graphite">{v.d}</p>
                 </div>
               </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-t border-line py-24 md:py-32">
+        <div className="mx-auto max-w-[1400px] px-6 md:px-10">
+          <Reveal>
+            <span className="eyebrow">Fundadores</span>
+          </Reveal>
+          <Reveal delay={120}>
+            <h2 className="display-lg mt-6 max-w-[18ch]">Dos disciplinas, un mismo estudio.</h2>
+          </Reveal>
+
+          <div className="mt-20 space-y-24 md:space-y-32">
+            {founders.map((f, i) => (
+              <div
+                key={f.name}
+                className="grid gap-10 md:grid-cols-12 md:gap-12 lg:gap-20"
+              >
+                <Reveal className={`md:col-span-5 ${i % 2 === 1 ? "md:order-2" : ""}`} slow>
+                  <div className="image-hover aspect-[3/4] overflow-hidden bg-stone">
+                    <img
+                      src={f.img}
+                      alt={`${f.name} — ${f.role} en TRECE`}
+                      className="h-full w-full object-cover"
+                      loading="lazy"
+                    />
+                  </div>
+                </Reveal>
+                <div className={`md:col-span-7 ${i % 2 === 1 ? "md:order-1" : ""}`}>
+                  <Reveal>
+                    <h3 className="display-md font-display text-4xl md:text-5xl">{f.name}</h3>
+                    <div className="eyebrow mt-4 text-bronze">{f.role} | TRECE</div>
+                    <div className="mt-8 space-y-5 text-[15px] leading-[1.75] text-graphite">
+                      {f.body.map((p) => (
+                        <p key={p.slice(0, 24)}>{p}</p>
+                      ))}
+                    </div>
+                    <blockquote className="mt-10 border-l border-bronze pl-6 font-display text-2xl leading-snug text-ink md:text-3xl">
+                      “{f.quote}”
+                    </blockquote>
+                  </Reveal>
+                </div>
+              </div>
             ))}
           </div>
         </div>
