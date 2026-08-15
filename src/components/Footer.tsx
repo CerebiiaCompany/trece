@@ -21,8 +21,9 @@ export function Footer() {
           <div className="md:col-span-3">
             <div className="eyebrow text-ivory/50">Contacto</div>
             <ul className="mt-5 space-y-2 text-sm text-ivory/85">
-              <li>hola@trecearq.co</li>
-              <li>+57 300 000 0000</li>
+              <li>
+                <a href="mailto:treceac.co@gmail.com" className="link-hover">treceac.co@gmail.com</a>
+              </li>
               <li>Cúcuta · Norte de Santander</li>
               <li>Colombia</li>
             </ul>
@@ -31,9 +32,16 @@ export function Footer() {
           <div className="md:col-span-2">
             <div className="eyebrow text-ivory/50">Redes</div>
             <ul className="mt-5 space-y-2 text-sm text-ivory/85">
-              <li><a href="https://instagram.com" className="link-hover">Instagram</a></li>
-              <li><a href="https://linkedin.com" className="link-hover">LinkedIn</a></li>
-              <li><a href="https://maps.google.com" className="link-hover">Mapa</a></li>
+              <li>
+                <a
+                  href="https://www.instagram.com/trece_arquitectura"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="link-hover"
+                >
+                  Instagram
+                </a>
+              </li>
             </ul>
           </div>
 
