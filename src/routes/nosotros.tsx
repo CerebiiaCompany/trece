@@ -2,8 +2,11 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Reveal } from "@/components/Reveal";
-import teamImg from "@/assets/team.jpg";
-import ctaImg from "@/assets/cta.jpg";
+import teamImgAsset from "@/assets/team.jpg.asset.json";
+import ctaImgAsset from "@/assets/cta.jpg.asset.json";
+
+const teamImg = teamImgAsset.url;
+const ctaImg = ctaImgAsset.url;
 
 export const Route = createFileRoute("/nosotros")({
   component: Nosotros,
