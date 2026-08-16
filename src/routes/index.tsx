@@ -98,7 +98,7 @@ function Index() {
       <Header transparent />
 
       {/* HERO */}
-      <section className="relative h-[100svh] min-h-[560px] w-full overflow-hidden">
+      <section className="relative flex min-h-[100svh] w-full flex-col overflow-hidden">
         <img
           src={heroImg}
           alt="Proyecto arquitectónico realizado por TRECE"
@@ -109,7 +109,7 @@ function Index() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/70" />
 
-        <div className="relative z-10 flex h-full flex-col justify-between px-6 pb-16 pt-32 md:px-16 md:pb-24 md:pt-40">
+        <div className="hero-compact relative z-10 flex flex-1 flex-col justify-between gap-12 px-6 pb-20 pt-28 md:px-16 md:pb-28 md:pt-40">
           <Reveal className="max-w-none">
             <span className="eyebrow text-ivory/80">Arquitectura · Ingeniería · Construcción</span>
           </Reveal>
@@ -121,13 +121,13 @@ function Index() {
               </h1>
             </Reveal>
             <Reveal delay={400}>
-              <p className="mt-8 max-w-2xl text-base leading-relaxed text-ivory/85 md:text-lg">
+              <p className="mt-6 max-w-2xl text-base leading-relaxed text-ivory/85 md:mt-8 md:text-lg">
                 Desarrollamos proyectos integrales de arquitectura, ingeniería y construcción,
                 combinando creatividad, técnica y una ejecución rigurosa para ofrecer espacios
                 funcionales, estéticos y duraderos.
               </p>
             </Reveal>
-            <Reveal delay={600} className="mt-10 flex flex-wrap gap-4">
+            <Reveal delay={600} className="mt-8 flex flex-wrap items-center gap-4 md:mt-10">
               <Link
                 to="/proyectos"
                 className="border border-ivory px-8 py-4 text-[11px] uppercase tracking-[0.28em] text-ivory transition-all duration-500 hover:bg-ivory hover:text-ink"
@@ -144,10 +144,11 @@ function Index() {
           </div>
         </div>
 
-        <div className="hidden md:block absolute bottom-8 left-1/2 z-10 -translate-x-1/2 text-[10px] uppercase tracking-[0.32em] text-ivory/70 animate-pulse">
+        <div className="pointer-events-none absolute bottom-6 left-1/2 z-10 hidden -translate-x-1/2 text-[10px] uppercase tracking-[0.32em] text-ivory/60 animate-pulse xl:block">
           Scroll
         </div>
       </section>
+
 
       {/* SOBRE TRECE */}
       <section id="nosotros" className="mx-auto max-w-[1600px] px-6 py-28 md:px-10 md:py-40">

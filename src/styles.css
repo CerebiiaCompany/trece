@@ -184,3 +184,15 @@
     transform: scale(1.04);
   }
 }
+
+/* Pantallas de poca altura: comprime el hero para que el texto y los botones no se corten */
+@media (max-height: 760px) and (min-width: 768px) {
+  .display-xl {
+    font-size: clamp(2rem, 4.4vw, 3.4rem);
+  }
+  .hero-compact {
+    padding-top: 6.5rem;
+    padding-bottom: 3rem;
+    gap: 1.5rem;
+  }
+}
