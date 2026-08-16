@@ -2,17 +2,14 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Reveal } from "@/components/Reveal";
-import teamImgAsset from "@/assets/team.jpg.asset.json";
-import ctaImgAsset from "@/assets/cta.jpg.asset.json";
-import julianaAsset from "@/assets/juliana-triana.png.asset.json";
-import juanAsset from "@/assets/juan-penaloza.png.asset.json";
-
-const teamImg = teamImgAsset.url;
-const ctaImg = ctaImgAsset.url;
+import teamImg from "@/assets/team.jpg";
+import ctaImg from "@/assets/cta.jpg";
+import julianaImg from "@/assets/juliana-triana.png";
+import juanImg from "@/assets/juan-penaloza.png";
 
 const founders = [
   {
-    img: julianaAsset.url,
+    img: julianaImg,
     name: "Juliana Triana",
     role: "Arquitecta · CEO de Diseño",
     body: [
@@ -24,7 +21,7 @@ const founders = [
       "Diseñar es encontrar el equilibrio entre lo que imaginamos y lo que realmente podemos construir.",
   },
   {
-    img: juanAsset.url,
+    img: juanImg,
     name: "Juan Peñaloza",
     role: "Arquitecto · CEO de Gestión de Proyectos",
     body: [

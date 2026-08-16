@@ -1,23 +1,15 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import heroImgAsset from "@/assets/hero.jpg.asset.json";
-import teamImgAsset from "@/assets/team.jpg.asset.json";
-import ctaImgAsset from "@/assets/cta.jpg.asset.json";
-import s1Asset from "@/assets/s1-consultoria.jpg.asset.json";
-import s2Asset from "@/assets/s2-construccion.jpg.asset.json";
-import s3Asset from "@/assets/s3-visualizacion.jpg.asset.json";
-import s4Asset from "@/assets/s4-interior.jpg.asset.json";
+import heroImg from "@/assets/hero.jpg";
+import teamImg from "@/assets/team.jpg";
+import ctaImg from "@/assets/cta.jpg";
+import s1 from "@/assets/s1-consultoria.jpg";
+import s2 from "@/assets/s2-construccion.jpg";
+import s3 from "@/assets/s3-visualizacion.jpg";
+import s4 from "@/assets/s4-interior.jpg";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Reveal } from "@/components/Reveal";
 import { projects } from "@/lib/projects";
-
-const heroImg = heroImgAsset.url;
-const teamImg = teamImgAsset.url;
-const ctaImg = ctaImgAsset.url;
-const s1 = s1Asset.url;
-const s2 = s2Asset.url;
-const s3 = s3Asset.url;
-const s4 = s4Asset.url;
 
 export const Route = createFileRoute("/")({
   component: Index,

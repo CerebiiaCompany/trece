@@ -2,15 +2,10 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Reveal } from "@/components/Reveal";
-import s1Asset from "@/assets/s1-consultoria.jpg.asset.json";
-import s2Asset from "@/assets/s2-construccion.jpg.asset.json";
-import s3Asset from "@/assets/s3-visualizacion.jpg.asset.json";
-import s4Asset from "@/assets/s4-interior.jpg.asset.json";
-
-const s1 = s1Asset.url;
-const s2 = s2Asset.url;
-const s3 = s3Asset.url;
-const s4 = s4Asset.url;
+import s1 from "@/assets/s1-consultoria.jpg";
+import s2 from "@/assets/s2-construccion.jpg";
+import s3 from "@/assets/s3-visualizacion.jpg";
+import s4 from "@/assets/s4-interior.jpg";
 
 export const Route = createFileRoute("/servicios")({
   component: Servicios,
