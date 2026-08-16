@@ -109,7 +109,7 @@ function Index() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/70" />
 
-        <div className="relative z-10 flex flex-1 flex-col justify-between gap-12 px-6 pb-20 pt-28 md:px-16 md:pb-28 md:pt-40">
+        <div className="hero-compact relative z-10 flex flex-1 flex-col justify-between gap-12 px-6 pb-20 pt-28 md:px-16 md:pb-28 md:pt-40">
           <Reveal className="max-w-none">
             <span className="eyebrow text-ivory/80">Arquitectura · Ingeniería · Construcción</span>
           </Reveal>
