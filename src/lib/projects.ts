@@ -21,8 +21,6 @@ import p2 from "@/assets/p2-multifamiliar.jpg";
 
 
 import p5 from "@/assets/p5-vacacional.jpg";
-import p6 from "@/assets/p6-coworking.jpg";
-import p7 from "@/assets/p7-optica.jpg";
 import p8 from "@/assets/p8-torre.jpg";
 import p9 from "@/assets/p9-juvenil.jpg";
 import santaRitaHero from "@/assets/santa-rita-fachada.png";
