@@ -69,6 +69,80 @@ import colsag5 from "@/assets/colsag-5.jpg";
 import colsag6 from "@/assets/colsag-6.jpg";
 import colsag7 from "@/assets/colsag-7.jpg";
 
+import home_burgers_1 from "@/assets/com-home-burgers-1.jpg";
+import home_burgers_2 from "@/assets/com-home-burgers-2.jpg";
+import home_burgers_3 from "@/assets/com-home-burgers-3.jpg";
+import home_burgers_4 from "@/assets/com-home-burgers-4.jpg";
+import home_burgers_5 from "@/assets/com-home-burgers-5.jpg";
+import home_burgers_6 from "@/assets/com-home-burgers-6.jpg";
+import dc_ingenieria_1 from "@/assets/com-dc-ingenieria-1.jpg";
+import dc_ingenieria_2 from "@/assets/com-dc-ingenieria-2.jpg";
+import dc_ingenieria_3 from "@/assets/com-dc-ingenieria-3.jpg";
+import dc_ingenieria_4 from "@/assets/com-dc-ingenieria-4.jpg";
+import dc_ingenieria_5 from "@/assets/com-dc-ingenieria-5.jpg";
+import dc_ingenieria_6 from "@/assets/com-dc-ingenieria-6.jpg";
+import dc_ingenieria_7 from "@/assets/com-dc-ingenieria-7.jpg";
+import dc_ingenieria_8 from "@/assets/com-dc-ingenieria-8.jpg";
+import local_ceiba_1 from "@/assets/com-local-ceiba-1.jpg";
+import local_ceiba_2 from "@/assets/com-local-ceiba-2.jpg";
+import local_ceiba_3 from "@/assets/com-local-ceiba-3.jpg";
+import local_ceiba_4 from "@/assets/com-local-ceiba-4.jpg";
+import local_ceiba_5 from "@/assets/com-local-ceiba-5.jpg";
+import local_ceiba_6 from "@/assets/com-local-ceiba-6.jpg";
+import coworking_1 from "@/assets/com-coworking-1.jpg";
+import coworking_2 from "@/assets/com-coworking-2.jpg";
+import coworking_3 from "@/assets/com-coworking-3.jpg";
+import coworking_4 from "@/assets/com-coworking-4.jpg";
+import coworking_5 from "@/assets/com-coworking-5.jpg";
+import coworking_6 from "@/assets/com-coworking-6.jpg";
+import villa_chirama_1 from "@/assets/com-villa-chirama-1.jpg";
+import villa_chirama_2 from "@/assets/com-villa-chirama-2.jpg";
+import villa_chirama_3 from "@/assets/com-villa-chirama-3.jpg";
+import villa_chirama_4 from "@/assets/com-villa-chirama-4.jpg";
+import villa_chirama_5 from "@/assets/com-villa-chirama-5.jpg";
+import villa_chirama_6 from "@/assets/com-villa-chirama-6.jpg";
+import villa_chirama_7 from "@/assets/com-villa-chirama-7.jpg";
+import eds_rivera_1 from "@/assets/com-eds-rivera-1.jpg";
+import eds_rivera_2 from "@/assets/com-eds-rivera-2.jpg";
+import eds_rivera_3 from "@/assets/com-eds-rivera-3.jpg";
+import eds_rivera_4 from "@/assets/com-eds-rivera-4.jpg";
+import eds_rivera_5 from "@/assets/com-eds-rivera-5.jpg";
+import eds_rivera_6 from "@/assets/com-eds-rivera-6.jpg";
+import locales_caobos_1 from "@/assets/com-locales-caobos-1.jpg";
+import locales_caobos_2 from "@/assets/com-locales-caobos-2.jpg";
+import locales_caobos_3 from "@/assets/com-locales-caobos-3.jpg";
+import locales_caobos_4 from "@/assets/com-locales-caobos-4.jpg";
+import locales_caobos_5 from "@/assets/com-locales-caobos-5.jpg";
+import locales_caobos_6 from "@/assets/com-locales-caobos-6.jpg";
+import dres_1 from "@/assets/com-dres-1.jpg";
+import dres_2 from "@/assets/com-dres-2.jpg";
+import dres_3 from "@/assets/com-dres-3.jpg";
+import dres_4 from "@/assets/com-dres-4.jpg";
+import dres_5 from "@/assets/com-dres-5.jpg";
+import dres_6 from "@/assets/com-dres-6.jpg";
+import natucampo_1 from "@/assets/com-natucampo-1.jpg";
+import natucampo_2 from "@/assets/com-natucampo-2.jpg";
+import natucampo_3 from "@/assets/com-natucampo-3.jpg";
+import natucampo_4 from "@/assets/com-natucampo-4.jpg";
+import americancargo_1 from "@/assets/com-americancargo-1.jpg";
+import americancargo_2 from "@/assets/com-americancargo-2.jpg";
+import americancargo_3 from "@/assets/com-americancargo-3.jpg";
+import americancargo_4 from "@/assets/com-americancargo-4.jpg";
+import americancargo_5 from "@/assets/com-americancargo-5.jpg";
+import americancargo_6 from "@/assets/com-americancargo-6.jpg";
+import zugo_1 from "@/assets/com-zugo-1.jpg";
+import zugo_2 from "@/assets/com-zugo-2.jpg";
+import zugo_3 from "@/assets/com-zugo-3.jpg";
+import zugo_4 from "@/assets/com-zugo-4.jpg";
+import parqueadero_caobos_1 from "@/assets/com-parqueadero-caobos-1.jpg";
+import parqueadero_caobos_2 from "@/assets/com-parqueadero-caobos-2.jpg";
+import parqueadero_caobos_3 from "@/assets/com-parqueadero-caobos-3.jpg";
+import parqueadero_caobos_4 from "@/assets/com-parqueadero-caobos-4.jpg";
+import parqueadero_caobos_5 from "@/assets/com-parqueadero-caobos-5.jpg";
+import parqueadero_caobos_6 from "@/assets/com-parqueadero-caobos-6.jpg";
+import parqueadero_caobos_7 from "@/assets/com-parqueadero-caobos-7.jpg";
+import parqueadero_caobos_8 from "@/assets/com-parqueadero-caobos-8.jpg";
+
 const santaRitaPdf = "/santa-rita-de-casia.pdf";
 
 export const projects: Project[] = [
@@ -137,7 +211,8 @@ export const projects: Project[] = [
     category: "Espacios Corporativos",
     year: "2024",
     tools: ["Revit", "V-Ray", "Twinmotion"],
-    image: p6,
+    image: coworking_1,
+    gallery: [coworking_1, coworking_2, coworking_3, coworking_4, coworking_5, coworking_6],
     challenge:
       "Diseñar un coworking flexible para múltiples formatos de trabajo, con identidad propia y un lenguaje industrial cálido.",
     solution:
@@ -151,7 +226,8 @@ export const projects: Project[] = [
     category: "Local Comercial",
     year: "2023",
     tools: ["SketchUp", "V-Ray", "Photoshop"],
-    image: p7,
+    image: zugo_1,
+    gallery: [zugo_1, zugo_2, zugo_3, zugo_4],
     challenge:
       "Crear una experiencia de retail sofisticada que exhibiera los productos como piezas de diseño y prolongara la permanencia del cliente.",
     solution:
@@ -308,6 +384,156 @@ export const projects: Project[] = [
     solution:
       "Se abrió la cocina hacia la zona social con una barra en mármol y celosías verticales en madera que filtran la vista sin cerrar; se diseñaron un recibidor con banca flotante, espejo e iluminación lineal, y mobiliario a medida en madera clara y blanco mate que unifica todos los ambientes.",
   },
+  {
+    slug: "home-burgers",
+    number: "17",
+    title: "Concurso Home Burgers & Shakes",
+    location: "Cúcuta, Norte de Santander",
+    category: "Restaurante / Retail",
+    year: "2025",
+    tools: ["SketchUp", "V-Ray", "AutoCAD", "Photoshop"],
+    image: home_burgers_1,
+    gallery: [home_burgers_1, home_burgers_2, home_burgers_3, home_burgers_4, home_burgers_5, home_burgers_6],
+    challenge:
+      "Proponer, en el marco de un concurso, la imagen de un local de hamburguesas dentro de una plaza comercial: debía resolver alto flujo de clientes, pedidos para llevar y consumo en sitio, y a la vez destacar frente a los locales vecinos con una identidad memorable.",
+    solution:
+      "Un portal en listones de madera con logotipo retroiluminado ancla la fachada; adentro, arcos, enchape hexagonal, barras altas en madera y vegetación colgante ordenan el recorrido desde el mostrador de pedidos hasta las zonas de permanencia, con iluminación cálida que refuerza la marca.",
+  },
+  {
+    slug: "dc-ingenieria",
+    number: "18",
+    title: "DC Ingeniería — Sede Corporativa",
+    location: "Cúcuta, Norte de Santander",
+    category: "Oficinas y Bodegas",
+    year: "2025",
+    tools: ["Revit", "SketchUp", "V-Ray", "AutoCAD"],
+    image: dc_ingenieria_1,
+    gallery: [dc_ingenieria_1, dc_ingenieria_2, dc_ingenieria_3, dc_ingenieria_4, dc_ingenieria_5, dc_ingenieria_6, dc_ingenieria_7, dc_ingenieria_8],
+    challenge:
+      "Unificar en un mismo predio bodegas operativas, patio de maniobras y áreas administrativas para una empresa de ingeniería, con una fachada corporativa sobria que ordenara accesos peatonales y vehiculares.",
+    solution:
+      "Un frente continuo en tonos grises con portones enrollables, acceso central enmarcado y logotipo sobre antepecho limpio; al interior, oficinas iluminadas naturalmente y circulaciones claras que separan el flujo de visitantes del flujo de carga.",
+  },
+  {
+    slug: "local-ceiba",
+    number: "19",
+    title: "Local Comercial La Ceiba",
+    location: "Cúcuta, Norte de Santander",
+    category: "Bar / Restaurante",
+    year: "2025",
+    tools: ["SketchUp", "V-Ray", "Photoshop"],
+    image: local_ceiba_1,
+    gallery: [local_ceiba_1, local_ceiba_2, local_ceiba_3, local_ceiba_4, local_ceiba_5, local_ceiba_6],
+    challenge:
+      "Convertir un local de esquina en un bar-restaurante con presencia urbana nocturna, capaz de abrirse a la calle sin perder control climático ni seguridad.",
+    solution:
+      "Fachada en carpintería metálica negra con arcos, malla expandida y jardineras perimetrales; marquesina con iluminación lineal para la marca, y un interior de barra central, mesas altas y vegetación que prolonga la experiencia hacia el andén.",
+  },
+  {
+    slug: "villa-chirama",
+    number: "20",
+    title: "Villa Chirama — Zona Social",
+    location: "Norte de Santander",
+    category: "Turismo y Eventos",
+    year: "2025",
+    tools: ["Revit", "Lumion", "AutoCAD"],
+    image: villa_chirama_1,
+    gallery: [villa_chirama_1, villa_chirama_2, villa_chirama_3, villa_chirama_4, villa_chirama_5, villa_chirama_6, villa_chirama_7],
+    challenge:
+      "Dotar a un club campestre de una zona social cubierta para eventos y restaurante, resistente al clima cálido y con visuales abiertas hacia la montaña.",
+    solution:
+      "Cubiertas curvas ligeras sobre columnas metálicas esbeltas que generan sombra continua sin cerrar el paisaje; pisos en gres, jardineras florales y mobiliario flexible que permite operar el mismo espacio como restaurante, terraza o salón de eventos.",
+  },
+  {
+    slug: "banos-eds-rivera",
+    number: "21",
+    title: "Baños EDS Rivera de las Américas",
+    location: "Cúcuta, Norte de Santander",
+    category: "Estación de Servicio",
+    year: "2025",
+    tools: ["SketchUp", "V-Ray", "AutoCAD"],
+    image: eds_rivera_1,
+    gallery: [eds_rivera_1, eds_rivera_2, eds_rivera_3, eds_rivera_4, eds_rivera_5, eds_rivera_6],
+    challenge:
+      "Renovar el módulo de baños públicos de una estación de servicio: espacio de alto tránsito que exige mantenimiento fácil, ventilación permanente y una imagen que transmita limpieza y seguridad.",
+    solution:
+      "Volumen compacto en lámina metálica y ladrillo con un mural urbano de gran formato que lo convierte en hito visual; interiores con enchapes de gran formato, mesones flotantes, señalética integrada e iluminación LED que facilita el aseo y reduce puntos de contacto.",
+  },
+  {
+    slug: "locales-caobos",
+    number: "22",
+    title: "Locales Comerciales Caobos",
+    location: "Caobos, Cúcuta",
+    category: "Retail / Uso Mixto",
+    year: "2025",
+    tools: ["Revit", "V-Ray", "AutoCAD"],
+    image: locales_caobos_1,
+    gallery: [locales_caobos_1, locales_caobos_2, locales_caobos_3, locales_caobos_4, locales_caobos_5, locales_caobos_6],
+    challenge:
+      "Insertar una batería de locales comerciales en un barrio residencial consolidado, respetando el arbolado existente y ofreciendo fachadas arrendables con identidad unitaria.",
+    solution:
+      "Un pórtico oscuro con celosías verticales y avisos integrados unifica los tres locales; grandes vitrinas, terrazas con mobiliario y jardineras lineales activan el andén y protegen el árbol existente como parte del proyecto.",
+  },
+  {
+    slug: "dres",
+    number: "23",
+    title: "D'RES — Carnicería Gourmet",
+    location: "Cúcuta, Norte de Santander",
+    category: "Local Comercial",
+    year: "2025",
+    tools: ["SketchUp", "V-Ray", "Photoshop"],
+    image: dres_1,
+    gallery: [dres_1, dres_2, dres_3, dres_4, dres_5, dres_6],
+    challenge:
+      "Diseñar una carnicería gourmet donde convivan la exhibición de producto fresco, la góndola de abarrotes importados y la cadena de frío, con un recorrido de compra corto y ordenado.",
+    solution:
+      "Paneles de madera ranurada con señalética retroiluminada por categoría, góndolas metálicas negras móviles, vitrina refrigerada de acero y neveras verticales en el perímetro; pisos claros e iluminación en riel que resalta el color del producto.",
+  },
+  {
+    slug: "natucampo",
+    number: "24",
+    title: "NatuCampo — Punto de Comida Rápida",
+    location: "Cúcuta, Norte de Santander",
+    category: "Restaurante / Retail",
+    year: "2025",
+    tools: ["SketchUp", "V-Ray", "Photoshop"],
+    image: natucampo_1,
+    gallery: [natucampo_1, natucampo_2, natucampo_3, natucampo_4],
+    challenge:
+      "Aprovechar un local estrecho y alargado para operar un punto de comida rápida con línea de producción a la vista, fila ordenada y zona de consumo, sin sensación de encierro.",
+    solution:
+      "Barra de producción continua sobre un costado, barra alta contra el muro opuesto con murales gráficos de marca, jardín vertical en el acceso y luminarias decorativas; la circulación central con divisores metálicos ordena la fila y agiliza la entrega.",
+  },
+  {
+    slug: "americancargo",
+    number: "25",
+    title: "Americancargo Diesel",
+    location: "Cúcuta, Norte de Santander",
+    category: "Showroom y Autopartes",
+    year: "2025",
+    tools: ["Revit", "V-Ray", "AutoCAD"],
+    image: americancargo_1,
+    gallery: [americancargo_1, americancargo_2, americancargo_3, americancargo_4, americancargo_5, americancargo_6],
+    challenge:
+      "Dar imagen corporativa a un almacén de autopartes para vehículos diésel, resolviendo atención al cliente, exhibición de marcas aliadas y bodega en un mismo frente sobre vía de alto tráfico.",
+    solution:
+      "Una fachada-telón en lámina perforada oscura con aviso retroiluminado y franja de marcas, marquesina que protege el acceso y vitrina continua hacia las oficinas; el interior separa mostrador, exhibición y almacenamiento con iluminación técnica uniforme.",
+  },
+  {
+    slug: "parqueadero-caobos",
+    number: "26",
+    title: "Parqueadero y Locales Caobos",
+    location: "Caobos, Cúcuta",
+    category: "Infraestructura Comercial",
+    year: "2025",
+    tools: ["Revit", "Lumion", "AutoCAD"],
+    image: parqueadero_caobos_1,
+    gallery: [parqueadero_caobos_1, parqueadero_caobos_2, parqueadero_caobos_3, parqueadero_caobos_4, parqueadero_caobos_5, parqueadero_caobos_6, parqueadero_caobos_7, parqueadero_caobos_8],
+    challenge:
+      "Resolver la demanda de estacionamiento de un conjunto comercial garantizando sombra, drenaje y circulación segura entre vehículos y peatones dentro de un predio irregular.",
+    solution:
+      "Cubiertas metálicas inclinadas sobre estructura tubular que cubren las bahías, demarcación amarilla y topellantas en cada cajón, franjas peatonales diferenciadas en pavimento y un eje central que conecta directamente con el acceso a los locales.",
+  },
 ];
 
 
@@ -327,6 +553,16 @@ export const projectCategory: Record<string, CategorySlug> = {
   "casa-cural-torcoroma": "iglesias",
   "coworking-comfanorte": "comercial",
   "optica-zugo": "comercial",
+  "home-burgers": "comercial",
+  "dc-ingenieria": "comercial",
+  "local-ceiba": "comercial",
+  "villa-chirama": "comercial",
+  "banos-eds-rivera": "comercial",
+  "locales-caobos": "comercial",
+  dres: "comercial",
+  natucampo: "comercial",
+  americancargo: "comercial",
+  "parqueadero-caobos": "comercial",
   
   "remodelacion-la-primavera": "remodelaciones",
   "remodelacion-la-primavera-02": "remodelaciones",
