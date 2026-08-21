@@ -142,6 +142,40 @@ import parqueadero_caobos_5 from "@/assets/com-parqueadero-caobos-5.jpg";
 import parqueadero_caobos_6 from "@/assets/com-parqueadero-caobos-6.jpg";
 import parqueadero_caobos_7 from "@/assets/com-parqueadero-caobos-7.jpg";
 import parqueadero_caobos_8 from "@/assets/com-parqueadero-caobos-8.jpg";
+import otr_alicante_1 from "@/assets/otr-alicante-1.jpg";
+import otr_alicante_2 from "@/assets/otr-alicante-2.jpg";
+import otr_alicante_3 from "@/assets/otr-alicante-3.jpg";
+import otr_alicante_4 from "@/assets/otr-alicante-4.jpg";
+import otr_alicante_5 from "@/assets/otr-alicante-5.jpg";
+import otr_alicante_6 from "@/assets/otr-alicante-6.jpg";
+import otr_peaje_acacios_1 from "@/assets/otr-peaje-acacios-1.jpg";
+import otr_peaje_acacios_2 from "@/assets/otr-peaje-acacios-2.jpg";
+import otr_peaje_acacios_3 from "@/assets/otr-peaje-acacios-3.jpg";
+import otr_peaje_acacios_4 from "@/assets/otr-peaje-acacios-4.jpg";
+import otr_aula_mompox_1 from "@/assets/otr-aula-mompox-1.jpg";
+import otr_aula_mompox_2 from "@/assets/otr-aula-mompox-2.jpg";
+import otr_aula_mompox_3 from "@/assets/otr-aula-mompox-3.jpg";
+import otr_aula_mompox_4 from "@/assets/otr-aula-mompox-4.jpg";
+import otr_acceso_reserva_1 from "@/assets/otr-acceso-reserva-1.jpg";
+import otr_acceso_reserva_2 from "@/assets/otr-acceso-reserva-2.jpg";
+import otr_acceso_reserva_3 from "@/assets/otr-acceso-reserva-3.jpg";
+import otr_acceso_reserva_4 from "@/assets/otr-acceso-reserva-4.jpg";
+import otr_terraza_comfanorte_1 from "@/assets/otr-terraza-comfanorte-1.jpg";
+import otr_terraza_comfanorte_2 from "@/assets/otr-terraza-comfanorte-2.jpg";
+import otr_terraza_comfanorte_3 from "@/assets/otr-terraza-comfanorte-3.jpg";
+import otr_terraza_comfanorte_4 from "@/assets/otr-terraza-comfanorte-4.jpg";
+import otr_terraza_comfanorte_5 from "@/assets/otr-terraza-comfanorte-5.jpg";
+import otr_terraza_comfanorte_6 from "@/assets/otr-terraza-comfanorte-6.jpg";
+import otr_cocina_social_1 from "@/assets/otr-cocina-social-1.jpg";
+import otr_cocina_social_2 from "@/assets/otr-cocina-social-2.jpg";
+import otr_cocina_social_3 from "@/assets/otr-cocina-social-3.jpg";
+import otr_cocina_social_4 from "@/assets/otr-cocina-social-4.jpg";
+import otr_cocina_social_5 from "@/assets/otr-cocina-social-5.jpg";
+import otr_cocina_social_6 from "@/assets/otr-cocina-social-6.jpg";
+import otr_bodega_barbosa_1 from "@/assets/otr-bodega-barbosa-1.jpg";
+import otr_bodega_barbosa_2 from "@/assets/otr-bodega-barbosa-2.jpg";
+import otr_bodega_barbosa_3 from "@/assets/otr-bodega-barbosa-3.jpg";
+import otr_bodega_barbosa_4 from "@/assets/otr-bodega-barbosa-4.jpg";
 
 const santaRitaPdf = "/santa-rita-de-casia.pdf";
 
@@ -534,6 +568,113 @@ export const projects: Project[] = [
     solution:
       "Cubiertas metálicas inclinadas sobre estructura tubular que cubren las bahías, demarcación amarilla y topellantas en cada cajón, franjas peatonales diferenciadas en pavimento y un eje central que conecta directamente con el acceso a los locales.",
   },
+  {
+    slug: "rincon-de-alicante",
+    number: "27",
+    title: "Parque Rincón de Alicante",
+    location: "Cúcuta, Norte de Santander",
+    category: "Espacio Público",
+    year: "2024",
+    tools: ["Revit", "Lumion", "AutoCAD"],
+    image: otr_alicante_1,
+    gallery: [otr_alicante_1, otr_alicante_2, otr_alicante_3, otr_alicante_4, otr_alicante_5, otr_alicante_6],
+    challenge:
+      "Recuperar un espacio residual del barrio y convertirlo en un parque seguro que reúna deporte, juego infantil y estancia para todas las edades.",
+    solution:
+      "Cancha multiuso cubierta con estructura metálica arqueada, zona de juegos, mobiliario urbano en concreto, jardineras lineales y pisos en adoquín que ordenan los recorridos peatonales.",
+  },
+  {
+    slug: "peaje-los-acacios",
+    number: "28",
+    title: "Peaje Los Acacios",
+    location: "Norte de Santander",
+    category: "Infraestructura Vial",
+    year: "2025",
+    tools: ["Revit", "Lumion", "AutoCAD"],
+    image: otr_peaje_acacios_3,
+    gallery: [otr_peaje_acacios_1, otr_peaje_acacios_2, otr_peaje_acacios_3, otr_peaje_acacios_4],
+    challenge:
+      "Modernizar una estación de peaje garantizando flujo vehicular continuo, visibilidad de la señalización y seguridad para los operarios en un entorno de alta velocidad.",
+    solution:
+      "Marquesina metálica continua sobre columnas oscuras con semáforos de carril, casetas en concreto con vidrio de piso a techo, isletas señalizadas en amarillo con topellantas y jardineras integradas que suavizan el conjunto.",
+  },
+  {
+    slug: "aula-modular-mompox",
+    number: "29",
+    title: "Aula Modular Mompox",
+    location: "Mompox, Bolívar",
+    category: "Equipamiento Educativo",
+    year: "2025",
+    tools: ["Revit", "Lumion", "AutoCAD"],
+    image: otr_aula_mompox_1,
+    gallery: [otr_aula_mompox_1, otr_aula_mompox_2, otr_aula_mompox_3, otr_aula_mompox_4],
+    challenge:
+      "Proveer un aula replicable y de montaje rápido en una zona cálida y de riesgo de inundación, con bajo mantenimiento y ventilación natural.",
+    solution:
+      "Módulo prefabricado elevado sobre pilotes de concreto, estructura metálica negra, cubierta plana con alero perimetral que protege del sol y la lluvia, terraza en gres y ventanería corrida para ventilación cruzada.",
+  },
+  {
+    slug: "acceso-la-reserva",
+    number: "30",
+    title: "Acceso Conjunto La Reserva",
+    location: "Cúcuta, Norte de Santander",
+    category: "Portería y Acceso",
+    year: "2024",
+    tools: ["SketchUp", "Lumion", "AutoCAD"],
+    image: otr_acceso_reserva_1,
+    gallery: [otr_acceso_reserva_1, otr_acceso_reserva_2, otr_acceso_reserva_3, otr_acceso_reserva_4],
+    challenge:
+      "Dotar al conjunto de una entrada con identidad y control efectivo, separando el ingreso de residentes y visitantes sin obstruir la vía.",
+    solution:
+      "Placa horizontal en voladizo con iluminación LED lineal y letras corpóreas, portería vidriada, celosías metálicas verticales en los portones y muro en piedra que acompaña el recorrido.",
+  },
+  {
+    slug: "terraza-comfanorte",
+    number: "31",
+    title: "Terraza Social COMFANORTE",
+    location: "Cúcuta, Norte de Santander",
+    category: "Espacio Social",
+    client: "COMFANORTE",
+    year: "2024",
+    tools: ["Revit", "Lumion", "V-Ray"],
+    image: otr_terraza_comfanorte_1,
+    gallery: [otr_terraza_comfanorte_1, otr_terraza_comfanorte_2, otr_terraza_comfanorte_3, otr_terraza_comfanorte_4, otr_terraza_comfanorte_5, otr_terraza_comfanorte_6],
+    challenge:
+      "Aprovechar una cubierta existente para crear un espacio social al aire libre que funcione de día y de noche sin sobrecargar la estructura.",
+    solution:
+      "Zonificación en estancias de mobiliario ligero, jardineras móviles, barandas en vidrio que preservan las visuales, guirnaldas de iluminación cálida y porcelanato claro de baja absorción térmica.",
+  },
+  {
+    slug: "cocina-social-bucaramanga",
+    number: "32",
+    title: "Cocina Social Bucaramanga",
+    location: "Bucaramanga, Santander",
+    category: "Cocina Institucional",
+    year: "2024",
+    tools: ["Revit", "V-Ray", "AutoCAD"],
+    image: otr_cocina_social_1,
+    gallery: [otr_cocina_social_1, otr_cocina_social_2, otr_cocina_social_3, otr_cocina_social_4, otr_cocina_social_5, otr_cocina_social_6],
+    challenge:
+      "Organizar una cocina de servicio en una planta alargada y estrecha cumpliendo el flujo higiénico de recepción, preparación, cocción y lavado.",
+    solution:
+      "Línea caliente con campana extractora industrial en un costado y línea fría de lavado y preparación en el opuesto, mesones y estanterías en acero inoxidable, enchape cerámico de fácil limpieza e iluminación uniforme.",
+  },
+  {
+    slug: "bodega-barbosa",
+    number: "33",
+    title: "Bodega y Oficinas INGDECOL",
+    location: "Barbosa, Santander",
+    category: "Industrial y Corporativo",
+    client: "INGDECOL S.A.S.",
+    year: "2025",
+    tools: ["Revit", "Lumion", "AutoCAD"],
+    image: otr_bodega_barbosa_1,
+    gallery: [otr_bodega_barbosa_1, otr_bodega_barbosa_2, otr_bodega_barbosa_3, otr_bodega_barbosa_4],
+    challenge:
+      "Integrar bodega operativa y oficinas administrativas en un mismo volumen sobre un lote en pendiente, con imagen corporativa reconocible desde la vía.",
+    solution:
+      "Base maciza en ladrillo gris para el área de bodega y dos niveles superiores de oficinas con ventanales, marcos curvos y placas voladas; acceso jerarquizado con portón oscuro, aviso corpóreo y patio de maniobras pavimentado.",
+  },
 ];
 
 
@@ -570,6 +711,13 @@ export const projectCategory: Record<string, CategorySlug> = {
   "apto-colsag": "remodelaciones",
   "centro-vacacional-comfaoriente": "otros",
   "centro-desarrollo-juvenil": "otros",
+  "rincon-de-alicante": "otros",
+  "peaje-los-acacios": "otros",
+  "aula-modular-mompox": "otros",
+  "acceso-la-reserva": "otros",
+  "terraza-comfanorte": "otros",
+  "cocina-social-bucaramanga": "otros",
+  "bodega-barbosa": "otros",
 };
 
 export const categories: {
