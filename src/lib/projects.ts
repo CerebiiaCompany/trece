@@ -20,9 +20,7 @@ import p1 from "@/assets/p1-ecohome.jpg";
 import p2 from "@/assets/p2-multifamiliar.jpg";
 
 
-import p5 from "@/assets/p5-vacacional.jpg";
 import p8 from "@/assets/p8-torre.jpg";
-import p9 from "@/assets/p9-juvenil.jpg";
 import santaRitaHero from "@/assets/santa-rita-fachada.png";
 import cobre1 from "@/assets/capilla-cobre-1.jpg";
 import cobre2 from "@/assets/capilla-cobre-2.jpg";
@@ -224,20 +222,6 @@ export const projects: Project[] = [
       "Volumen blanco de sección basilical simplificada, cruz esculpida en bajorrelieve y vitrales verticales que dibujan la luz sobre el altar a lo largo del día.",
   },
   {
-    slug: "centro-vacacional-comfaoriente",
-    number: "05",
-    title: "Centro Vacacional Comfaoriente",
-    location: "Chinácota",
-    category: "Turismo y Recreación",
-    year: "2024",
-    tools: ["Revit", "Lumion", "AutoCAD"],
-    image: p5,
-    challenge:
-      "Insertar un centro vacacional en un valle de topografía marcada respetando la vegetación existente y las visuales hacia la montaña.",
-    solution:
-      "Cabañas horizontales dispuestas siguiendo curvas de nivel, cubiertas ligeras a dos aguas y una piscina como pieza articuladora del conjunto.",
-  },
-  {
     slug: "coworking-comfanorte",
     number: "06",
     title: "Coworking COMFANORTE",
@@ -280,21 +264,6 @@ export const projects: Project[] = [
       "Optimizar un lote reducido en Bucaramanga para obtener el máximo aprovechamiento de vistas hacia la meseta y una envolvente eficiente frente al asoleamiento.",
     solution:
       "Torre esbelta con balcones alternados que quiebran la fachada, celosías metálicas al poniente y un núcleo estructural que libera plantas.",
-  },
-  {
-    slug: "centro-desarrollo-juvenil",
-    number: "09",
-    title: "Centro de Desarrollo Juvenil",
-    location: "Cali",
-    category: "Equipamiento Cultural",
-    client: "JASA Ltda.",
-    year: "2024",
-    tools: ["Revit", "Lumion", "AutoCAD"],
-    image: p9,
-    challenge:
-      "Proyectar un equipamiento público capaz de convocar a la juventud del sector con una imagen contemporánea y un programa cultural exigente.",
-    solution:
-      "Fachada de planos geométricos superpuestos que dialoga con la energía del barrio, plaza pública en el acceso y un gran vestíbulo iluminado cenitalmente.",
   },
   {
     slug: "capilla-nuestra-senora-del-cobre",
@@ -709,8 +678,6 @@ export const projectCategory: Record<string, CategorySlug> = {
   "remodelacion-la-primavera-02": "remodelaciones",
   "apto-san-luis": "remodelaciones",
   "apto-colsag": "remodelaciones",
-  "centro-vacacional-comfaoriente": "otros",
-  "centro-desarrollo-juvenil": "otros",
   "rincon-de-alicante": "otros",
   "peaje-los-acacios": "otros",
   "aula-modular-mompox": "otros",
